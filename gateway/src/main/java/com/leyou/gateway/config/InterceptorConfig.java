@@ -6,6 +6,7 @@
 package com.leyou.gateway.config;
 
 import com.leyou.gateway.interceptor.AuthInterceptor;
+import com.leyou.gateway.interceptor.BlackListInterceptor;
 import com.leyou.gateway.interceptor.LimitInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +23,7 @@ public class InterceptorConfig implements WebMvcConfigurer
         registry.addInterceptor(limitInterceptor()).addPathPatterns("/**");
 
         // 请求黑名单拦截器
+        registry.addInterceptor(blackListInterceptor()).addPathPatterns("/**");
 
         // 权限拦截器
         registry.addInterceptor(authInterceptor()).addPathPatterns("/**");
@@ -37,5 +39,11 @@ public class InterceptorConfig implements WebMvcConfigurer
     public AuthInterceptor authInterceptor()
     {
         return new AuthInterceptor();
+    }
+
+    @Bean
+    public BlackListInterceptor blackListInterceptor()
+    {
+        return new BlackListInterceptor();
     }
 }

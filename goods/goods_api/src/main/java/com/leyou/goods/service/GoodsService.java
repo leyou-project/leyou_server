@@ -11,4 +11,6 @@ import com.leyou.domain.Goods;
 public interface GoodsService
 {
     IPage<Goods> getGoodsList(int page, int size);
+
+    Goods getGoodsById(long id);
 }

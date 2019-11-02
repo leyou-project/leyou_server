@@ -37,12 +37,12 @@ public class AuthInterceptor implements HandlerInterceptor
                 response.setContentType("text/json;charset=UTF-8");
                 response.getWriter().println(ResultUtil.timeOutResult);
                 break;
-            case VERIFY_ERR:
+            case VERIFY_OK:
+                return true;
+            default:
                 response.setContentType("text/json;charset=UTF-8");
                 response.getWriter().println(ResultUtil.errorResult);
                 break;
-            default:
-                return true;
         }
         return false;
     }

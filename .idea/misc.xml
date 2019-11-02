@@ -13,10 +13,11 @@
         <option value="$PROJECT_DIR$/dubbo_hello/hello-api/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo_hello/provider/pom.xml" />
         <option value="$PROJECT_DIR$/goods/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_demo/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="13" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

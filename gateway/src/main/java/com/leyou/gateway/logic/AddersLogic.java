@@ -28,6 +28,11 @@ public class AddersLogic
         return IPWhiteList.contains(ip);
     }
 
+    public static boolean isBlackList(String ip)
+    {
+        return IPBlackList.contains(ip);
+    }
+
     @PostConstruct
     public void AddersInit()
     {

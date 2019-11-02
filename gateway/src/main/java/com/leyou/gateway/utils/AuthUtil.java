@@ -5,11 +5,27 @@
  */
 package com.leyou.gateway.utils;
 
+import com.leyou.utils.JWTUtil;
+
 public class AuthUtil
 {
     public static AuthVerifyType VerifyToken(String token, String uid)
     {
-        // 认证直接成功
-        return AuthVerifyType.VERIFY_OK;
+        Integer parseUid = JWTUtil.parseJWT(token);
+        if (parseUid == null)
+        {
+            return AuthVerifyType.VERIFY_ERR;
+        }
+        if (parseUid.compareTo(0) < 0)
+        {
+            return AuthVerifyType.VERIFY_TIME_OUT;
+        }
+        if ((parseUid + "").equals(uid))
+        {
+            return AuthVerifyType.VERIFY_OK;
+        } else
+        {
+            return AuthVerifyType.VERIFY_ERR;
+        }
     }
 }

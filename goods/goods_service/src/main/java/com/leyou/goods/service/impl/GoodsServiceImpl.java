@@ -29,4 +29,10 @@ public class GoodsServiceImpl implements GoodsService
         goodsMapper.selectPage(new Page().setSize(size).setPages(page),wrapper);
         return null;
     }
+
+    @Override
+    public Goods getGoodsById(long id)
+    {
+        return goodsMapper.selectById(id);
+    }
 }

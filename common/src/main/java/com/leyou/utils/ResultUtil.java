@@ -49,6 +49,14 @@ public class ResultUtil
         return result;
     }
 
+    public static Map<String, Object> success(Object data)
+    {
+        Map<String, Object> result = new HashMap<>();
+        result.put("code", 0);
+        result.put("data", data);
+        return result;
+    }
+
     public static Map<String, Object> success(int code, String info)
     {
         Map<String, Object> result = new HashMap<>();

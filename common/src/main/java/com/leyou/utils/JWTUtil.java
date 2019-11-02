@@ -5,19 +5,15 @@
  */
 package com.leyou.utils;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.JwtBuilder;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 public class JWTUtil
 {
-    private static final String secret = "com.leyou.project.20191102454545454545454545454545454545";
+    private static final String subject = "root";
+    private static final String secret = "leyou.project";
     private static final long outMillis = 2 * 60 * 60 * 1000;
 
     /**
@@ -28,50 +24,40 @@ public class JWTUtil
      */
     public static String createJWT(Integer uid)
     {
-        // 指定签名的时候使用的签名算法
-        SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
-        // 生成JWT的时间
-        long nowMillis = System.currentTimeMillis();
-        Date now = new Date(nowMillis);
-        // payload
-        Map<String, Object> claims = new HashMap<>();
-        claims.put("uid", uid);
-
-        // secret私钥
-        String key = secret;
-
-        // 签发人
-        String subject = secret;
-
-        // body
+        Date now = new Date();
         JwtBuilder builder = Jwts.builder()
-                // claims
-                .setClaims(claims)
-                // uuid避免重放攻击。
                 .setId(UUID.randomUUID().toString())
-                // jwt的签发时间
-                .setIssuedAt(now)
-                // 签发人
                 .setSubject(subject)
-                // 设置签名使用的签名算法和签名使用的秘钥
-                .signWith(signatureAlgorithm, key);
-        long expMillis = nowMillis + outMillis;
-        Date exp = new Date(expMillis);
-        //设置过期时间
-        builder.setExpiration(exp);
+                .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime() + outMillis))
+                .signWith(SignatureAlgorithm.HS256, secret.getBytes())
+                .claim("uid", uid);
         return builder.compact();
     }
 
-    public static Claims parseJWT(String token)
+    /**
+     * 解析token
+     *
+     * @param token
+     * @return
+     */
+    public static Integer parseJWT(String token)
     {
-        // 签名秘钥，和生成的签名的秘钥一模一样
-        String key = secret;
-        // 得到DefaultJwtParser
-        Claims claims = Jwts.parser()
-                //设置签名的秘钥
-                .setSigningKey(key)
-                //设置需要解析的jwt
-                .parseClaimsJws(token).getBody();
-        return claims;
+        try
+        {
+            Claims claims = Jwts.parser()
+                    .setSigningKey(secret.getBytes())
+                    .parseClaimsJws(token)
+                    .getBody();
+            return (Integer) claims.get("uid");
+        } catch (ExpiredJwtException e)
+        {
+            // 过期返回-1
+            return -1;
+        } catch (Exception e)
+        {
+            // 解析失败返回null
+            return null;
+        }
     }
 }
