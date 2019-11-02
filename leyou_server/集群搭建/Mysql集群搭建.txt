@@ -1,0 +1,1 @@
+docker run -d -p 3306:3306 -v v1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=123456 --privileged --name=mysql1 --net=net1 --ip 192.168.66.146 pxc

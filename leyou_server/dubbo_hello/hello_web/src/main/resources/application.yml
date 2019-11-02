@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: dubbo-auto-configure-consumer-sample-terst
+dubbo:
+  registry:
+    address: zookeeper://192.168.31.21:2181
+server:
+  port: 8888

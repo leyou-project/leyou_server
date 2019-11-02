@@ -1,0 +1,3 @@
+docker run --name zookeeper -p 2182:2181 -v /root/zookeeper/data:/data  -d zookeeper:3.4.12
+
+https://www.cnblogs.com/kingkoo/p/8732448.html

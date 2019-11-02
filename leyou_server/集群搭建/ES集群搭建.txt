@@ -1,0 +1,69 @@
+参考博客：https://blog.csdn.net/belonghuang157405/article/details/83301937
+192.168.66.146为服务器地址
+
+创建node1配置文件：/data/es/node1/config/elasticsearch.yml
+cluster.name: elasticsearch-cluster
+node.name: es-node1
+network.bind_host: 0.0.0.0
+network.publish_host: 192.168.66.146
+http.port: 9200
+transport.tcp.port: 9300
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+node.master: true
+node.data: true
+discovery.zen.ping.unicast.hosts: ["192.168.66.146:9300","192.168.66.146:9301","192.168.66.146:9302"]
+discovery.zen.minimum_master_nodes: 2
+
+创建node2配置文件：/data/es/node2/config/elasticsearch.yml
+cluster.name: elasticsearch-cluster
+node.name: es-node1
+network.bind_host: 0.0.0.0
+network.publish_host: 192.168.66.146
+http.port: 9200
+transport.tcp.port: 9300
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+node.master: true
+node.data: true
+discovery.zen.ping.unicast.hosts: ["192.168.66.146:9300","192.168.66.146:9301","192.168.66.146:9302"]
+discovery.zen.minimum_master_nodes: 2
+
+创建node3配置文件：/data/es/node3/config/elasticsearch.yml
+cluster.name: elasticsearch-cluster
+node.name: es-node3
+network.bind_host: 0.0.0.0
+network.publish_host: 192.168.66.146
+http.port: 9202
+transport.tcp.port: 9302
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+node.master: true
+node.data: true
+discovery.zen.ping.unicast.hosts: ["192.168.66.146:9300","192.168.66.146:9301","192.168.66.146:9302"]
+discovery.zen.minimum_master_nodes: 2
+
+创建数据存储目录，权限为777：
+/data/es/node1/data1
+/data/es/node2/data2
+/data/es/node3/data3
+
+创建容器：
+docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9200:9200 -p 9300:9300 -v /data/es/node1/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /data/es/node1/data1:/usr/share/elasticsearch/data --name es1 docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9201:9201 -p 9301:9301 -v /data/es/node2/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /data/es/node2/data2:/usr/share/elasticsearch/data --name es2 docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9202:9202 -p 9302:9302 -v /data/es/node3/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml -v /data/es/node3/data3:/usr/share/elasticsearch/data --name es3 docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+
+启动容器：
+node1：docker start es1
+node2：docker start es2
+node3：docker start es3
+
+启动管理界面
+docker run -d -p 9100:9100 --name es-manager  mobz/elasticsearch-head:5
+
+JVM线程数量限制：
+编辑配置：vim /etc/sysctl.conf
+追加内容：vm.max_map_count=262144
+启用配置：sysctl -p
+
+管理界面：http://192.168.66.146:9100/
