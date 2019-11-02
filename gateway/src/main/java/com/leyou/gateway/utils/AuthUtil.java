@@ -11,7 +11,12 @@ public class AuthUtil
 {
     public static AuthVerifyType VerifyToken(String token, String uid)
     {
+        if (token == null || uid == null)
+        {
+            return AuthVerifyType.VERIFY_ERR;
+        }
         Integer parseUid = JWTUtil.parseJWT(token);
+        System.out.println("parseUid="+parseUid);
         if (parseUid == null)
         {
             return AuthVerifyType.VERIFY_ERR;

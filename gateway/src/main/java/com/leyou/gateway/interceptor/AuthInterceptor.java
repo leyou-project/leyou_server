@@ -7,6 +7,7 @@ package com.leyou.gateway.interceptor;
 
 import com.leyou.gateway.logic.AddersLogic;
 import com.leyou.gateway.utils.AuthUtil;
+import com.leyou.gateway.utils.RequestUtil;
 import com.leyou.utils.ResultUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -24,7 +25,7 @@ public class AuthInterceptor implements HandlerInterceptor
             return true;
         }
         // 白名单放行
-        if (AddersLogic.isWhiteList(request.getRemoteAddr()))
+        if (AddersLogic.isWhiteList(RequestUtil.getRemoteHost(request)))
         {
             return true;
         }
@@ -33,12 +34,12 @@ public class AuthInterceptor implements HandlerInterceptor
         String uid = request.getHeader("uid");
         switch (AuthUtil.VerifyToken(token, uid))
         {
+            case VERIFY_OK:
+                return true;
             case VERIFY_TIME_OUT:
                 response.setContentType("text/json;charset=UTF-8");
                 response.getWriter().println(ResultUtil.timeOutResult);
                 break;
-            case VERIFY_OK:
-                return true;
             default:
                 response.setContentType("text/json;charset=UTF-8");
                 response.getWriter().println(ResultUtil.errorResult);

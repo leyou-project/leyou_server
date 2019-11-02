@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="完善网关">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/GoodsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/BlackListInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/RequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/GoodsType.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/GoodsType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/config/InterceptorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/logic/AddersLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/logic/AddersLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_api/src/main/java/com/leyou/goods/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/src/main/java/com/leyou/goods/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/src/main/java/com/leyou/DemoApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/src/main/java/com/leyou/bean/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/src/main/java/com/leyou/controller/DemoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/src/main/java/com/leyou/mapper/DemoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/target/classes/com/leyou/DemoApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/target/classes/com/leyou/bean/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/target/classes/com/leyou/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_demo/target/classes/com/leyou/mapper/DemoMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user_api/target/classes/com/leyou/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_api/target/classes/com/leyou/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou.sql" beforeDir="false" afterPath="$PROJECT_DIR$/leyou.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,16 +108,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="JWT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JWT" />
-      <module name="gateway" />
+    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hello_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hello.App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Redis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Redis" />
-      <module name="gateway" />
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hello_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hello.App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,31 +174,36 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JWT" />
-      <item itemvalue="Application.Redis" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.GoodsApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.App (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Application.Redis" />
-        <item itemvalue="Application.JWT" />
+        <item itemvalue="Spring Boot.App (1)" />
+        <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.2465847" />
+        <option name="contentProportion" value="0.2090164" />
         <treeState>
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b1aa0466" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -229,8 +233,16 @@
       <workItem from="1572678224260" duration="389000" />
       <workItem from="1572678638741" duration="12922000" />
       <workItem from="1572699487852" duration="2074000" />
-      <workItem from="1572701683357" duration="1789000" />
+      <workItem from="1572701683357" duration="9650000" />
     </task>
+    <task id="LOCAL-00001" summary="完善网关">
+      <created>1572703516339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572703516339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,5 +260,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完善网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善网关" />
   </component>
 </project>

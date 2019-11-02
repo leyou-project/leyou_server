@@ -31,7 +31,7 @@ public class ResultUtil
         Result error = new Result();
         error.code = 10000;
         error.info = "错误请求";
-        errorResult = gson.toJson(limit);
+        errorResult = gson.toJson(error);
     }
 
     @Data

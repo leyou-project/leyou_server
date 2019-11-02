@@ -8,9 +8,11 @@ package com.leyou.domain;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
 @TableName("t_goods")
-public class Goods
+public class Goods implements Serializable
 {
     private Long id;
     private String goodsName;

@@ -1,25 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : lsm
- Source Server Type    : MySQL
- Source Server Version : 80013
- Source Host           : localhost:3306
- Source Schema         : leyou
-
- Target Server Type    : MySQL
- Target Server Version : 80013
- File Encoding         : 65001
-
- Date: 31/10/2019 19:24:36
-*/
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for t_goods
--- ----------------------------
 DROP TABLE IF EXISTS `t_goods`;
 CREATE TABLE `t_goods`  (
   `id` bigint(20) NOT NULL,
@@ -32,9 +10,7 @@ CREATE TABLE `t_goods`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Table structure for t_goods_type
--- ----------------------------
+
 DROP TABLE IF EXISTS `t_goods_type`;
 CREATE TABLE `t_goods_type`  (
   `id` bigint(20) NOT NULL,
@@ -46,9 +22,29 @@ CREATE TABLE `t_goods_type`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Table structure for t_user
--- ----------------------------
+DROP TABLE IF EXISTS `t_goods_style`;
+CREATE TABLE `t_goods_style`  (
+    `id` bigint(20) NOT NULL,
+    `field` varchar(20) NOT NULL COMMENT 'style字段',
+    `stock` int(11) NULL DEFAULT NULL COMMENT '库存',
+    `status` tinyint(1) NULL DEFAULT NULL COMMENT '1正常，2禁用',
+    `bind_id` bigint(20) NOT NULL COMMENT '绑定id',
+    `update_time` int(11) NULL DEFAULT NULL,
+    `create_time` int(11) NULL DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+DROP TABLE IF EXISTS `t_goods_bind`;
+CREATE TABLE `t_goods_bind`  (
+    `id` bigint(20) NOT NULL,
+    `goods_id` bigint(20) NOT NULL COMMENT '商品id',
+    `field` varchar(20) NOT NULL COMMENT 'style字段',
+    `status` tinyint(1) NULL DEFAULT NULL COMMENT '1正常，2禁用',
+    `update_time` int(11) NULL DEFAULT NULL,
+    `create_time` int(11) NULL DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
 DROP TABLE IF EXISTS `t_user`;
 CREATE TABLE `t_user`  (
   `id` bigint(20) NOT NULL,
@@ -71,9 +67,7 @@ CREATE TABLE `t_user`  (
   INDEX `user_index_salt`(`salt`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Table structure for t_user_details
--- ----------------------------
+
 DROP TABLE IF EXISTS `t_user_details`;
 CREATE TABLE `t_user_details`  (
   `id` bigint(20) NOT NULL,
@@ -89,5 +83,3 @@ CREATE TABLE `t_user_details`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `t_user_details_uid`(`uid`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
-
-SET FOREIGN_KEY_CHECKS = 1;
