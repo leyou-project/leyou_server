@@ -5,60 +5,68 @@
  */
 package com.leyou.user.service.impl;
 
-import com.leyou.user.domin.User;
-import com.leyou.user.repository.UserRepository;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.leyou.domain.User;
+import com.leyou.user.mapper.UserMapper;
 import com.leyou.user.service.UserService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service(timeout = 5000, version = "1.0.0")
 public class UserServiceImpl implements UserService
 {
     @Autowired
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
     @Override
     public User login(String userName, String password)
     {
-        return userRepository.findUserByUserNameAndPassword(userName, password);
+        Map<String, Object> columnMap = new HashMap<>(2);
+        columnMap.put("user_name", userName);
+        columnMap.put("password", password);
+        List<User> result = userMapper.selectByMap(columnMap);
+        if (result.size() == 1)
+        {
+            return result.get(0);
+        }
+        return null;
     }
 
     @Override
     public int register(User user)
     {
-        User temp = userRepository.save(user);
-        return temp.getUid();
+        return userMapper.insert(user);
     }
 
     @Override
     public boolean updateUser(User user)
     {
-        return userRepository.save(user) != null;
+        return userMapper.updateById(user) == 1;
     }
 
     @Override
     public boolean deleteUser(long id)
     {
-        User user = this.getUser(id).get();
-        userRepository.deleteById(id);
-        return user != null;
+        return userMapper.deleteById(id) == 1;
     }
 
     @Override
-    public Page<User> getUserList(int page, int size)
+    public IPage<User> getUserList(int page, int size)
     {
-        Pageable pageable = PageRequest.of(page, size);
-        return userRepository.findAll(pageable);
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        return userMapper.selectPage(new Page().setPages(page).setSize(size), wrapper);
     }
 
     @Override
-    public Optional<User> getUser(long id)
+    public User getUser(long id)
     {
-        return userRepository.findById(id);
+        return userMapper.selectById(id);
     }
 }

@@ -5,10 +5,8 @@
  */
 package com.leyou.user.service;
 
-import com.leyou.user.domin.User;
-import org.springframework.data.domain.Page;
-
-import java.util.Optional;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.leyou.domain.User;
 
 public interface UserService
 {
@@ -47,15 +45,15 @@ public interface UserService
 
     /**
      * 用户列表
+     *
      * @param page
      * @param size
      * @return
      */
-    Page<User> getUserList(int page, int size);
+    IPage<User> getUserList(int page, int size);
 
     /**
-     *
      * @return
      */
-    Optional<User> getUser(long id);
+    User getUser(long id);
 }

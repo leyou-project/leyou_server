@@ -5,13 +5,13 @@
  */
 package com.leyou.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import javax.persistence.Entity;
 import java.io.Serializable;
 
 @Data
-@Entity
+@TableName("t_goods_type")
 public class GoodsType implements Serializable
 {
     private Long id;

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gateway-api
+dubbo:
+  registry:
+    address: zookeeper://192.168.31.21:2181
+server:
+  port: 8080
+
+address:
+  white:
+    list: 127.0.0.1,192.168.31.21
+  black:
+    list: 127.0.0.2,192.168.146.21

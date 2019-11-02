@@ -3,15 +3,15 @@
  * 时间：2019/11/1-22:23
  * 作用：
  */
-package com.leyou.user.domin;
+package com.leyou.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import javax.persistence.Entity;
 import java.io.Serializable;
 
 @Data
-@Entity
+@TableName("t_User_details")
 public class UserDetails implements Serializable
 {
     private Long id;

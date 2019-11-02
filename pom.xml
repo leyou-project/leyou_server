@@ -22,6 +22,7 @@
         <module>dubbo_hello</module>
         <module>mybatis_demo</module>
         <module>goods</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
@@ -34,6 +35,7 @@
         <druid.version>1.1.9</druid.version>
         <log.version>1.2.17</log.version>
         <dubbo-spring.version>2.7.0</dubbo-spring.version>
+        <guava.version>25.1-jre</guava.version>
     </properties>
 
     <dependencies>
@@ -48,7 +50,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
-            <version>8.0.13</version>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -67,7 +69,11 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->

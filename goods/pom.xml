@@ -16,6 +16,4 @@
         <module>goods_api</module>
         <module>goods_service</module>
     </modules>
-
-
 </project>
