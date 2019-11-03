@@ -18,7 +18,7 @@ MongoDB -> 文件存储
 **环境搭建**
 安装jdk：sudo yum install java-1.8.0-openjdk.x86_64
 
-**zk安装pull**
+**ZK安装pull**
 docker pull zookeeper:3.4.12
 
 **ES pull：**
@@ -27,7 +27,11 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:6.3.2 \
 docker pull mobz/elasticsearch-head:5
 
 **Mysql pull：**
+docker pull mysql:5.7.13
 
 **Redis pull：**
 docker pull redis
+
+**MQ pull**
+docker pull rabbitmq-management
 

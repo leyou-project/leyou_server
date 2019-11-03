@@ -22,6 +22,7 @@
         <module>dubbo_hello</module>
         <module>goods</module>
         <module>gateway</module>
+        <module>im</module>
     </modules>
 
     <properties>

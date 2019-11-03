@@ -1,0 +1,29 @@
+参考博客：https://blog.csdn.net/belonghuang157405/article/details/83540148
+
+启动三个MQ实例：
+docker run -d --hostname rabbitmq01 --name rabbitmqCluster01 -v /data/rabbitmq/node1:/var/lib/rabbitmq -p 15672:15672 -p 5672:5672 -e RABBITMQ_ERLANG_COOKIE='rabbitmqCookie' rabbitmq:management
+docker run -d --hostname rabbitmq02 --name rabbitmqCluster02 -v /data/rabbitmq/node2:/var/lib/rabbitmq -p 15673:15672 -p 5673:5672 -e RABBITMQ_ERLANG_COOKIE='rabbitmqCookie'  --link rabbitmqCluster01:rabbitmq01 rabbitmq:management
+docker run -d --hostname rabbitmq03 --name rabbitmqCluster03 -v /data/rabbitmq/node3:/var/lib/rabbitmq -p 15674:15672 -p 5674:5672 -e RABBITMQ_ERLANG_COOKIE='rabbitmqCookie'  --link rabbitmqCluster01:rabbitmq01 --link rabbitmqCluster02:rabbitmq02  rabbitmq:management
+
+node1 bash：
+docker exec -it rabbitmqCluster01 bash
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl start_app
+exit
+
+node2 bash：
+docker exec -it rabbitmqCluster02 bash
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl join_cluster --ram rabbit@rabbitmq01
+rabbitmqctl start_app
+exit
+
+node3 bash：
+docker exec -it rabbitmqCluster03 bash
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl join_cluster --ram rabbit@rabbitmq01
+rabbitmqctl start_app
+exit

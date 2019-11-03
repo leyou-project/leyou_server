@@ -1,1 +1,32 @@
-docker run -d -p 3306:3306 -v v1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=123456 --privileged --name=mysql1 --net=net1 --ip 192.168.66.146 pxc
+集群方式为主从复制
+参考博客：https://blog.csdn.net/u012486840/article/details/80449384
+
+创建目录：/data/mysql/master、/data/mysql/slave1、/data/mysql/slave2
+
+运行主容器：
+docker run --name master -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+# 拷贝配置文件
+# mysqld后追加内容：
+#   log-bin=mysql-bin
+#   server-id=1
+GRANT REPLICATION SLAVE ON *.* to 'backup'@'%' identified by 'backup';
+show grants for 'backup'@'%';
+
+docker cp master:/etc/mysql/my.cnf /data/mysql/master/my.cnf
+# 配置文件回代
+docker cp /data/mysql/master/my.cnf master:/etc/mysql/my.cnf
+# 重启容器
+docker restart master
+
+
+运行从容器1：
+docker run --name slave1 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+docker cp slave1:/etc/mysql/my.cnf /data/mysql/slave1/my.cnf
+docker cp /data/mysql/slave1/my.cnf slave1:/etc/mysql/my.cnf
+docker restart slave1
+
+运行从容器2：
+docker run --name slave2 -p 3308:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+docker cp slave2:/etc/mysql/my.cnf /data/mysql/slave2/my.cnf
+docker cp /data/mysql/slave2/my.cnf slave2:/etc/mysql/my.cnf
+docker restart slave2
