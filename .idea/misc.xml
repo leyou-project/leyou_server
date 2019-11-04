@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/dubbo_hello/hello-api/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo_hello/provider/pom.xml" />
         <option value="$PROJECT_DIR$/goods/pom.xml" />
+        <option value="$PROJECT_DIR$/im/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_demo/pom.xml" />
       </set>
     </option>

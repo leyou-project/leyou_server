@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/RequestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/GoodBind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/GoodsStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im/src/main/java/com/leyou/im/ImApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im/src/main/java/com/leyou/im/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im/src/main/java/com/leyou/im/logic/CheckCenterLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im/src/main/java/com/leyou/im/server/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/集群搭建/mycat/init.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou.sql" beforeDir="false" afterPath="$PROJECT_DIR$/leyou.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/GoodsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/GoodsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/集群搭建/Redis集群.txt" beforeDir="false" afterPath="$PROJECT_DIR$/集群搭建/Redis集群.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/集群搭建/zk-conf/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/集群搭建/zk-conf/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,21 +70,22 @@
     <property name="android.sdk.path" value="E:/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/集群搭建" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\架构设计" />
+      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\架构设计" />
+      <recent name="C:\Users\Admin\IdeaProjects\leyou_server" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\集群搭建" />
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server\gateway\src\main\resources" />
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server\集群搭建\dubbo-admin" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\goods\goods_service\src\main\resources" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\mybatis_demo\src\main\resources" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\dubbo_hello\hello_web\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\架构设计" />
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -107,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.App">
     <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hello_web" />
       <extension name="coverage">
@@ -182,11 +180,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.App" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.App (1)" />
-        <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
   </component>
@@ -198,17 +196,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@522b1b9d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b1aa0466" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@44727f8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@522b1b9d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6966c514" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +226,8 @@
       <workItem from="1572678224260" duration="389000" />
       <workItem from="1572678638741" duration="12922000" />
       <workItem from="1572699487852" duration="2074000" />
-      <workItem from="1572701683357" duration="9650000" />
+      <workItem from="1572701683357" duration="11139000" />
+      <workItem from="1572759456577" duration="22460000" />
     </task>
     <task id="LOCAL-00001" summary="完善网关">
       <created>1572703516339</created>
@@ -242,7 +236,28 @@
       <option name="project" value="LOCAL" />
       <updated>1572703516339</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="调用完成">
+      <created>1572711585931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572711585931</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Mysql集群和MQ集群">
+      <created>1572766484053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572766484054</updated>
+    </task>
+    <task id="LOCAL-00004" summary="架构图片更新">
+      <created>1572766571778</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572766571778</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +278,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完善网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善网关" />
+    <MESSAGE value="调用完成" />
+    <MESSAGE value="Mysql集群和MQ集群" />
+    <MESSAGE value="架构图片更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="架构图片更新" />
   </component>
 </project>
