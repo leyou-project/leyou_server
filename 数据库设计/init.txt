@@ -1,0 +1,17 @@
+目前分三个数据库
+    leyou：商城主要业务；
+    im：聊天信息、公告推送；
+    logs：日志监控信息；
+
+leyou：
+    t_goods 商品表
+    t_goods_type 商品分类表
+    t_goods_style 商品规格表
+    t_goods_bind 商品-商品规格绑定表
+    t_user 用户表
+    t_user_details 用户详情表
+
+im：
+    t_message 聊天消息表
+    t_message_user 消息指定接收用户表
+    t_notice 公共表

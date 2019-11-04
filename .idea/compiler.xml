@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gateway" />
         <module name="hello_web" />
         <module name="common" />
         <module name="hello_service" />
         <module name="hello_api" />
-        <module name="gateway" />
         <module name="user_service" />
         <module name="goods_api" />
         <module name="user_api" />
@@ -20,7 +20,6 @@
     <bytecodeTargetLevel>
       <module name="consumer" target="1.8" />
       <module name="goods" target="1.8" />
-      <module name="im" target="1.8" />
       <module name="mybatis_demo" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>
@@ -35,7 +34,6 @@
       <module name="hello_api" options="-parameters" />
       <module name="hello_service" options="-parameters" />
       <module name="hello_web" options="-parameters" />
-      <module name="im" options="-parameters" />
       <module name="mybatis_demo" options="-parameters" />
       <module name="user_api" options="-parameters" />
       <module name="user_service" options="-parameters" />
