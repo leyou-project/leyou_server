@@ -6,7 +6,7 @@
 package com.leyou.user.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.leyou.domain.User;
+import com.leyou.domain.user.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

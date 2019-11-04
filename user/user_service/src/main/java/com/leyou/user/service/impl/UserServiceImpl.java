@@ -8,7 +8,7 @@ package com.leyou.user.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.leyou.domain.User;
+import com.leyou.domain.user.User;
 import com.leyou.user.mapper.UserMapper;
 import com.leyou.user.service.UserService;
 import org.apache.dubbo.config.annotation.Service;

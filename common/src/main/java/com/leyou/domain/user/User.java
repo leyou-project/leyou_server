@@ -3,7 +3,7 @@
  * 时间：2019/11/1-22:15
  * 作用：
  */
-package com.leyou.domain;
+package com.leyou.domain.user;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
