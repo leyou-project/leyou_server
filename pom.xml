@@ -24,6 +24,7 @@
         <module>gateway</module>
         <module>im</module>
         <module>file</module>
+        <module>logs</module>
     </modules>
 
     <properties>
