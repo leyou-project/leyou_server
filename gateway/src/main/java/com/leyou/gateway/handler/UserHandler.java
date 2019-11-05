@@ -5,7 +5,7 @@
  */
 package com.leyou.gateway.handler;
 
-import com.leyou.domain.User;
+import com.leyou.domain.user.User;
 import com.leyou.user.service.UserService;
 import com.leyou.utils.JWTUtil;
 import com.leyou.utils.ResultUtil;

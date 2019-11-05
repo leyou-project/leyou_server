@@ -6,7 +6,7 @@
 package com.leyou.goods.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.leyou.domain.Goods;
+import com.leyou.domain.goods.Goods;
 
 public interface GoodsService
 {

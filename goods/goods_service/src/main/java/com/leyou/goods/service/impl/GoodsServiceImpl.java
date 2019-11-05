@@ -8,7 +8,7 @@ package com.leyou.goods.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.leyou.domain.Goods;
+import com.leyou.domain.goods.Goods;
 import com.leyou.goods.mapper.GoodsMapper;
 import com.leyou.goods.service.GoodsService;
 import org.apache.dubbo.config.annotation.Service;

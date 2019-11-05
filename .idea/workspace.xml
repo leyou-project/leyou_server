@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="加入im服务已经部分更新">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/im/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/config/ExecutorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_api/src/main/java/com/leyou/im/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/ImApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/logic/SendLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/server/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user_service/src/main/java/com/leyou/user/config/ExecutorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据库设计/im.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据库设计/init.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/RequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/src/main/java/com/hello/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_service/target/classes/com/hello/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/src/main/java/com/hello/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/hello_web/target/classes/com/hello/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou.sql" beforeDir="false" afterPath="$PROJECT_DIR$/数据库设计/leyou.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user_service/src/main/java/com/leyou/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_service/src/main/java/com/leyou/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou.sql" beforeDir="false" afterPath="$PROJECT_DIR$/leyou.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +47,6 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +64,6 @@
   <component name="ProjectId" id="1T1NrBaTA65IYOiRoc478n6fwza" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -81,25 +73,21 @@
     <property name="android.sdk.path" value="E:/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/数据库设计" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\数据库设计" />
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\架构设计" />
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.leyou.goods.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\数据库设计" />
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server\gateway\src\main\resources" />
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server\集群搭建\dubbo-admin" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\goods\goods_service\src\main\resources" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\mybatis_demo\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\dubbo_hello\hello_web\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\leyou_server\架构设计" />
+      <recent name="C:\Users\Admin\IdeaProjects\leyou_server" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,9 +107,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ImApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="hello_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hello.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hello_service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hello.*" />
@@ -159,19 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="im_service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.im.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.im.ImApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="user_service" />
       <extension name="coverage">
@@ -189,32 +177,38 @@
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.GoodsApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.App" />
       <item itemvalue="Spring Boot.App (1)" />
-      <item itemvalue="Spring Boot.ImApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ImApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.App (1)" />
+        <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
+        <option name="contentProportion" value="0.2090164" />
         <treeState>
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5cc403f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5cc403f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@31bb9e18" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b1aa0466" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@960e7640" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@44727f8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />

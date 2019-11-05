@@ -7,3 +7,4 @@ chmod +x /usr/local/bin/docker-compose
 在/data/redis目录内分别创建redis-master.conf、redis-slave1.conf、redis-slave2.conf文件，内容如目录下案例所示
 
 通过docker-compose.yml启动容器，docker-compose up -d
+

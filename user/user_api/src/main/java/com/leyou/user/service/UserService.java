@@ -6,7 +6,7 @@
 package com.leyou.user.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.leyou.domain.User;
+import com.leyou.domain.user.User;
 
 public interface UserService
 {
