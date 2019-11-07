@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class LimitInterceptor implements HandlerInterceptor
 {
-    // 每秒生成10个许可
-    private static final RateLimiter rateLimiter = RateLimiter.create(10);
+    // 每秒生成50个许可
+    private static final RateLimiter rateLimiter = RateLimiter.create(50);
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception

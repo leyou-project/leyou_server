@@ -33,5 +33,5 @@ docker pull mysql:5.7.13
 docker pull redis
 
 **MQ pull**
-docker pull rabbitmq-management
+docker pull rabbitmq
 

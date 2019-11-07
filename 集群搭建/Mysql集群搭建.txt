@@ -3,7 +3,7 @@
 
 创建目录：/data/mysql/master、/data/mysql/slave1、/data/mysql/slave2
 
-运行主容器：
+运行主库：
 docker run --name master -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
 # 拷贝配置文件
 # mysqld后追加内容：
