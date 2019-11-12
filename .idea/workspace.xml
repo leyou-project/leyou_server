@@ -279,6 +279,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cart_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.cart.CartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.gateway.GatewayApplication" />
