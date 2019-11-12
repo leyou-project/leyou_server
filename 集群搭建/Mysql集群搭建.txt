@@ -4,7 +4,7 @@
 创建目录：/data/mysql/master、/data/mysql/slave1、/data/mysql/slave2
 
 运行主容器：
-docker run --name master -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+docker run --name master -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
 # 拷贝配置文件
 # mysqld后追加内容：
 #   log-bin=mysql-bin
@@ -20,13 +20,13 @@ docker restart master
 
 
 运行从容器1：
-docker run --name slave1 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+docker run --name slave1 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
 docker cp slave1:/etc/mysql/my.cnf /data/mysql/slave1/my.cnf
 docker cp /data/mysql/slave1/my.cnf slave1:/etc/mysql/my.cnf
 docker restart slave1
 
 运行从容器2：
-docker run --name slave2 -p 3308:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.13
+docker run --name slave2 -p 3308:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
 docker cp slave2:/etc/mysql/my.cnf /data/mysql/slave2/my.cnf
 docker cp /data/mysql/slave2/my.cnf slave2:/etc/mysql/my.cnf
 docker restart slave2

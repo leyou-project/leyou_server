@@ -27,11 +27,11 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:6.3.2 \
 docker pull mobz/elasticsearch-head:5
 
 **Mysql pull：**
-docker pull mysql:5.7.13
+docker pull mysql:5.7
 
 **Redis pull：**
 docker pull redis
 
 **MQ pull**
-docker pull rabbitmq-management
+docker pull rabbitmq
 
