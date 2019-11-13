@@ -23,8 +23,7 @@
         <module>goods</module>
         <module>gateway</module>
         <module>im</module>
-        <module>file</module>
-        <module>logs</module>
+        <module>cart</module>
     </modules>
 
     <properties>

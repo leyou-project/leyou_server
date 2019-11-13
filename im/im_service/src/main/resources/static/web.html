@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web测试</title>
+</head>
+<body>
+输入对方id(小于等于0则为广播)：<input type="number" id="to"><br>
+<input type="text" id="msg">
+<button onclick="send()">发送</button>
+</body>
+<script>
+    const userId = 1;
+    let secretKey = null;
+    let ws = new WebSocket("ws://127.0.0.1:8080/im/" + userId);
+
+    ws.onopen = function (evt) {  //绑定连接事件
+        console.log("开始连接");
+    };
+
+    ws.onmessage = function (evt) {//绑定收到消息事件
+        let msg = JSON.parse(evt.data);
+        switch (msg.code) {
+            case 2:
+                // 消息回执
+                break;
+            case 3:
+                // 握手返回
+                secretKey = msg.content;
+                alert("密钥=" + secretKey);
+                break;
+            case 4:
+            case 5:
+            case 6:
+                // 系统通知
+                alert("收到消息："+msg.content);
+            case 7:
+                // 私聊
+                alert("收到消息："+msg.content);
+                break
+        }
+    };
+
+    ws.onclose = function (evt) { //绑定关闭或断开连接事件
+        console.log("连接关闭");
+    };
+
+    function send() {
+        let msg = {};
+        msg.code = 5;
+        let toId = document.getElementById("to").value;
+        if (toId <= 0) {
+            msg.code = 7;
+        }
+        msg.formId=userId;
+        msg.content = document.getElementById("msg").value;
+        ws.send(JSON.stringify(msg))
+    }
+</script>
+</html>
