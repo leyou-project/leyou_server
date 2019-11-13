@@ -11,3 +11,5 @@
 /nbdist/
 /.nb-gradle/
 build/
+
+/.idea

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  rs1:
+    image: mongo
+    volumes:
+      - /data/mongodb/replset/rs1:/data/db
+    command: mongod --dbpath /data/mongodb/db --replSet myset
+  rs2:
+    image: mongo
+    volumes:
+      - /data/mongodb/replset/rs2:/data/db
+    command: mongod --dbpath /data/mongodb/db --replSet myset
+  rs3:
+    image: mongo
+    volumes:
+      - /data/mongodb/replset/rs3:/data/db
+    command: mongod --dbpath /data/mongodb/db --replSet myset
