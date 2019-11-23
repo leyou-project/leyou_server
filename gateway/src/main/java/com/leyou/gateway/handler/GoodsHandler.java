@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("goods")
 public class GoodsHandler
 {
-    @Reference(version = "1.0.0")
+    //@Reference(version = "1.0.0")
     private GoodsService goodsService;
 
     @GetMapping("get/{id}")

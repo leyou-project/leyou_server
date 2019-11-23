@@ -5,12 +5,13 @@
  */
 package com.leyou.goods.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.leyou.domain.goods.Goods;
+import com.leyou.domain.TGoods;
+
+import java.util.List;
 
 public interface GoodsService
 {
-    IPage<Goods> getGoodsList(int page, int size);
+    List<TGoods> getGoodsList(int page, int size);
 
-    Goods getGoodsById(long id);
+    TGoods getGoodsById(long id);
 }

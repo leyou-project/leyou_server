@@ -22,6 +22,8 @@
     <file url="file://$PROJECT_DIR$/nacos/nacos-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos/nacos-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/user_api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/user_service" charset="UTF-8" />
   </component>

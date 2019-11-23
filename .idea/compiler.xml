@@ -7,29 +7,33 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="im_service" />
+        <module name="user-service" />
         <module name="im_api" />
         <module name="gateway" />
         <module name="goods_service" />
-        <module name="cart_service" />
-        <module name="cart_api" />
         <module name="goods_api" />
         <module name="nacos-service" />
         <module name="hello_api" />
         <module name="nacos-web" />
-        <module name="user_service" />
         <module name="nacos-api" />
         <module name="hello_web" />
         <module name="hello_service" />
-        <module name="user_api" />
+        <module name="user-api" />
         <module name="common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cart" target="1.8" />
+      <module name="cart_api" target="1.8" />
+      <module name="cart_service" target="1.8" />
       <module name="consumer" target="1.8" />
+      <module name="dubbo-admin-server" target="1.5" />
       <module name="goods" target="1.8" />
       <module name="im" target="1.8" />
       <module name="mybatis_demo" target="1.8" />
       <module name="provider" target="1.8" />
+      <module name="user_api" target="1.8" />
+      <module name="user_service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -38,6 +42,7 @@
       <module name="cart_api" options="-parameters" />
       <module name="cart_service" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="dubbo-admin-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="goods" options="" />
       <module name="goods_api" options="-parameters" />
@@ -53,6 +58,8 @@
       <module name="nacos-api" options="-parameters" />
       <module name="nacos-service" options="-parameters" />
       <module name="nacos-web" options="-parameters" />
+      <module name="user-api" options="-parameters" />
+      <module name="user-service" options="-parameters" />
       <module name="user_api" options="-parameters" />
       <module name="user_service" options="-parameters" />
     </option>

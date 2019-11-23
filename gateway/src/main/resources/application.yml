@@ -1,9 +1,16 @@
 spring:
   application:
-    name: dubbo-gateway-api
+    name: leyou-gateway-api
+
+nacos:
+  service-address: 114.116.239.108
+  port: 8848
 dubbo:
+  application:
+    logger: log4j2
   registry:
-    address: zookeeper://192.168.31.21:2181
+    address: nacos://${nacos.service-address}:${nacos.port}
+
 server:
   port: 8080
 

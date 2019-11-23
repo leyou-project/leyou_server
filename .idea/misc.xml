@@ -10,12 +10,16 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/cart/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-admin-server/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo_hello/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo_hello/hello-api/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo_hello/provider/pom.xml" />
         <option value="$PROJECT_DIR$/goods/pom.xml" />
         <option value="$PROJECT_DIR$/im/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user_api/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user_service/pom.xml" />
       </set>
     </option>
   </component>

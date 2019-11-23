@@ -5,14 +5,13 @@
  */
 package com.leyou.goods.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.leyou.domain.goods.Goods;
+import com.leyou.domain.TGoods;
 import com.leyou.goods.mapper.GoodsMapper;
 import com.leyou.goods.service.GoodsService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 @Service(timeout = 5000, version = "1.0.0")
 public class GoodsServiceImpl implements GoodsService
@@ -21,16 +20,14 @@ public class GoodsServiceImpl implements GoodsService
     private GoodsMapper goodsMapper;
 
     @Override
-    public IPage<Goods> getGoodsList(int page, int size)
+    public List<TGoods> getGoodsList(int page, int size)
     {
-        QueryWrapper<Goods> wrapper=new QueryWrapper<>();
-        goodsMapper.selectPage(new Page().setSize(size).setPages(page),wrapper);
         return null;
     }
 
     @Override
-    public Goods getGoodsById(long id)
+    public TGoods getGoodsById(long id)
     {
-        return goodsMapper.selectById(id);
+        return null;
     }
 }

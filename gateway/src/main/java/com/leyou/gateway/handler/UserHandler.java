@@ -5,32 +5,30 @@
  */
 package com.leyou.gateway.handler;
 
-import com.leyou.domain.user.User;
-import com.leyou.user.service.UserService;
+import com.leyou.domain.TUser;
+import com.leyou.user.service.RPCUserService;
 import com.leyou.utils.JWTUtil;
 import com.leyou.utils.ResultUtil;
 import org.apache.dubbo.config.annotation.Reference;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("user")
 public class UserHandler
 {
     @Reference(version = "1.0.0")
-    private UserService userService;
+    private RPCUserService userService;
 
     @PostMapping("login")
     public Object login(String userName, String password)
     {
-        User user = userService.login(userName, password);
+        TUser user = userService.login(userName, password);
         if (user == null)
         {
             return ResultUtil.error("登录失败");
         } else
         {
-            User temp = new User();
+            TUser temp = new TUser();
             String token = JWTUtil.createJWT(user.getUid());
             temp.setHeadImg(user.getHeadImg());
             temp.setNickName(user.getNickName());
@@ -38,5 +36,11 @@ public class UserHandler
             temp.setPhone(user.getPhone());
             return ResultUtil.success(0, token, temp);
         }
+    }
+
+    @GetMapping("get/{id}")
+    public Object get(@PathVariable Long id)
+    {
+        return ResultUtil.success(userService.get(id));
     }
 }

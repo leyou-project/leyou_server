@@ -13,8 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>user_api</module>
-        <module>user_service</module>
+
+        <module>user-api</module>
+        <module>user-service</module>
     </modules>
 
     <dependencies>

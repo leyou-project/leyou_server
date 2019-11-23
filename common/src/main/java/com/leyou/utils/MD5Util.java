@@ -5,18 +5,30 @@
  */
 package com.leyou.utils;
 
-import org.springframework.util.DigestUtils;
-
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
 public class MD5Util
 {
     public static final int SALT_LEN = 10;
 
+
     public static String md5(String str)
     {
-        String md5 = DigestUtils.md5DigestAsHex(str.getBytes());
-        return md5;
+        try
+        {
+            MessageDigest m;
+            m = MessageDigest.getInstance("MD5");
+            m.update(str.getBytes(), 0, str.length());
+            String md5Val = new BigInteger(1, m.digest()).toString(16);
+            return md5Val;
+        } catch (NoSuchAlgorithmException e)
+        {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static String salt()
