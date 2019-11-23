@@ -7,18 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="im_service" />
-        <module name="gateway" />
         <module name="im_api" />
-        <module name="hello_web" />
-        <module name="common" />
-        <module name="hello_service" />
-        <module name="hello_api" />
-        <module name="cart_api" />
-        <module name="user_service" />
-        <module name="cart_service" />
-        <module name="goods_api" />
-        <module name="user_api" />
+        <module name="gateway" />
         <module name="goods_service" />
+        <module name="cart_service" />
+        <module name="cart_api" />
+        <module name="goods_api" />
+        <module name="nacos-service" />
+        <module name="hello_api" />
+        <module name="nacos-web" />
+        <module name="user_service" />
+        <module name="nacos-api" />
+        <module name="hello_web" />
+        <module name="hello_service" />
+        <module name="user_api" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -46,6 +49,10 @@
       <module name="im_api" options="-parameters" />
       <module name="im_service" options="-parameters" />
       <module name="mybatis_demo" options="-parameters" />
+      <module name="nacos" options="-parameters" />
+      <module name="nacos-api" options="-parameters" />
+      <module name="nacos-service" options="-parameters" />
+      <module name="nacos-web" options="-parameters" />
       <module name="user_api" options="-parameters" />
       <module name="user_service" options="-parameters" />
     </option>

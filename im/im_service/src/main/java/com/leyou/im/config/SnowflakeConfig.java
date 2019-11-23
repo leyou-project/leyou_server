@@ -5,7 +5,7 @@
  */
 package com.leyou.im.config;
 
-import com.lsm1998.im.utils.Snowflake;
+import com.leyou.utils.Snowflake;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

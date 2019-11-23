@@ -5,7 +5,7 @@
  */
 package com.leyou.im.handler;
 
-import com.lsm1998.im.handler.message.MessageHandler;
+import com.leyou.im.handler.message.MessageHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

@@ -12,6 +12,11 @@ spring:
     maxActive: 20
     maxWait: 6000
     validationQuery: SELECT 1 FROM DUAL
+  redis:
+    sentinel:
+      master: master
+      nodes: 47.103.211.234:6379,47.103.211.234:6380,47.103.211.234:6381
+    password: 123456
 
 dubbo:
   scan:
@@ -20,4 +25,4 @@ dubbo:
     name: dubbo
     port: 12000
   registry:
-    address: zookeeper://192.168.31.21:2181
+    address: nacos://114.116.239.108:8848

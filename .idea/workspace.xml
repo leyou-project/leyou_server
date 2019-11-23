@@ -2,183 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cart/cart_api/cart_api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/cart_api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/cart_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/cart_service/src/main/java/com/leyou/cart/CartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/cart_service/src/main/java/com/leyou/cart/config/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/cart_service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/im/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/im/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_api/src/main/java/com/leyou/im/service/ImService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/ExecutorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/RedisClusterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/SnowflakeConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/dao/ImDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/AsyncTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisSubscribe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/SocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/SubscribeOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/message/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/message/MsgReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/service/impl/ImServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/CmdCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/DESUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/MessageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/css/sitelogo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/json/getList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/json/getMembers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/find.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/getmsg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/msgbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/mobile/layim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im_service/src/main/resources/static/web.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/config/DubboConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-api/src/main/java/com/leyou/service/NacosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-service/src/main/java/com/leyou/nacos/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-service/src/main/java/com/leyou/nacos/service/NacosServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-service/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-web/src/main/java/com/leyou/nacos/WebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-web/src/main/java/com/leyou/nacos/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/nacos-web/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/im/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/im/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_api/src/main/java/com/leyou/im/service/MessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im/im_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/ImApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/ImApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/logic/SendLogic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/server/WebSocketServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/service/impl/MessageServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/leyou/domain/GoodsType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/target/classes/com/leyou/goods/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/SnowflakeConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/SnowflakeConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisSubscribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisSubscribe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/集群搭建/MQ集群.txt" beforeDir="false" afterPath="$PROJECT_DIR$/集群搭建/MQ集群.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/集群搭建/Mysql集群搭建.txt" beforeDir="false" afterPath="$PROJECT_DIR$/集群搭建/Mysql集群搭建.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user_api/target/classes/com/leyou/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_api/target/classes/com/leyou/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/user_service/target/classes/com/leyou/user/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,24 +87,24 @@
     <property name="android.sdk.path" value="E:/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo_hello/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\nacos\nacos-web\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\nacos\nacos-service\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\nacos\nacos-api\src\main\java" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im\handler" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server\架构设计" />
       <recent name="C:\Users\Admin\IdeaProjects\leyou_server" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im\handler" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im\config" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\resources" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_api\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GoodsApplication">
+  <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hello_web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hello.App" />
@@ -300,6 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nacos-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.nacos.HelloApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="im_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.im.ImApplication" />
@@ -314,13 +174,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="nacos-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.nacos.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
         <option name="contentProportion" value="0.2090164" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b3b4d82c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b3b4d82c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d2d23118" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -356,7 +233,17 @@
       <workItem from="1573278006885" duration="506000" />
       <workItem from="1573483795247" duration="59000" />
       <workItem from="1573484325131" duration="606000" />
-      <workItem from="1573565222372" duration="5230000" />
+      <workItem from="1573565222372" duration="5491000" />
+      <workItem from="1573829347694" duration="133000" />
+      <workItem from="1573832001694" duration="29000" />
+      <workItem from="1573920051646" duration="107000" />
+      <workItem from="1573920990889" duration="306000" />
+      <workItem from="1574256647233" duration="39000" />
+      <workItem from="1574262279911" duration="46000" />
+      <workItem from="1574262348047" duration="5000" />
+      <workItem from="1574433676873" duration="1388000" />
+      <workItem from="1574506655219" duration="372000" />
+      <workItem from="1574508501853" duration="2575000" />
     </task>
     <task id="LOCAL-00001" summary="完善网关">
       <created>1572703516339</created>
@@ -372,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572883742792</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="im和购物车">
+      <created>1573573316699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573573316699</updated>
+    </task>
+    <task id="LOCAL-00004" summary="im和购物车">
+      <created>1573573429485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573573429485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +296,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="完善网关" />
     <MESSAGE value="热更新配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="热更新配置" />
+    <MESSAGE value="im和购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="im和购物车" />
   </component>
 </project>

@@ -24,6 +24,7 @@
         <module>gateway</module>
         <module>im</module>
         <module>cart</module>
+        <module>nacos</module>
     </modules>
 
     <properties>
