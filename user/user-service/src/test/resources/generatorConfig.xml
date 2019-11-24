@@ -73,7 +73,7 @@
 <!--            <generatedKey column="id" sqlStatement="JDBC"/>-->
 <!--        </table>-->
 
-        <table tableName="t_cart">
+        <table tableName="t_message">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
 	</context>

@@ -19,11 +19,11 @@ public class InterceptorConfig implements WebMvcConfigurer
     @Override
     public void addInterceptors(InterceptorRegistry registry)
     {
-        // 限流拦截器
-        registry.addInterceptor(limitInterceptor()).addPathPatterns("/**");
-
         // 请求黑名单拦截器
         registry.addInterceptor(blackListInterceptor()).addPathPatterns("/**");
+
+        // 限流拦截器
+        registry.addInterceptor(limitInterceptor()).addPathPatterns("/**");
 
         // 权限拦截器
         registry.addInterceptor(authInterceptor()).addPathPatterns("/**");

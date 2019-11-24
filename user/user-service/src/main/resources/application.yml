@@ -1,6 +1,17 @@
 spring:
   application:
     name: leyou-service-user
+  redis:
+    sentinel:
+      master: 47.103.211.234:6379
+      slave: 47.103.211.234:6380,47.103.211.234:6381
+    password: 123456
+    database: 0
+    timeout: 5000
+    max-active: 20
+    max-wait: -1
+    max-idle: 500
+    min-idle: 0
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.103.211.234:3306/leyou?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true

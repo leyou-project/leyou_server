@@ -1,0 +1,54 @@
+server:
+  port: 10097
+  extend-address: 47.103.211.234
+
+spring:
+  application:
+    name: leyou-service-im
+  datasource:
+    url: jdbc:mysql://${server.extend-address}:3306/leyou?useUnicode=true&characterEncoding=utf8&userSSL=false&serverTimezone=GMT%2B8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  redis:
+    sentinel:
+      master: ${server.extend-address}:6379
+      slave: ${server.extend-address}:6380,${server.extend-address}:6381
+    password: 123456
+    database: 0
+    timeout: 5000
+    max-active: 20
+    max-wait: -1
+    max-idle: 500
+    min-idle: 0
+
+chat:
+  # 此程序的消费通道
+  subTopic: im1
+  # 全部通道
+  allTopics: im1,im2
+
+snowflake:
+  machine-id: 2
+  app-id: 0
+
+# 日志配置
+#logging:
+#  config: classpath:log4j2.xml
+#  level:
+#    root: info
+#    web: info
+
+# Dubbo、Nacos
+nacos:
+  service-address: 114.116.239.108
+  port: 8848
+dubbo:
+  registry:
+    address: nacos://${nacos.service-address}:${nacos.port}
+  protocol:
+    name: dubbo
+    port: 20080
+  scan:
+    base-packages: com.leyou.im.service.dubbo

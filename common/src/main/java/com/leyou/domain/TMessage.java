@@ -3,15 +3,17 @@ package com.leyou.domain;
 public class TMessage {
     private Long id;
 
-    private Long toId;
+    private Integer toId;
 
     private Integer formId;
 
-    private Boolean type;
+    private Integer code;
+
+    private Integer type;
 
     private String title;
 
-    private Boolean status;
+    private Integer status;
 
     private Long updateTime;
 
@@ -27,11 +29,11 @@ public class TMessage {
         this.id = id;
     }
 
-    public Long getToId() {
+    public Integer getToId() {
         return toId;
     }
 
-    public void setToId(Long toId) {
+    public void setToId(Integer toId) {
         this.toId = toId;
     }
 
@@ -43,11 +45,19 @@ public class TMessage {
         this.formId = formId;
     }
 
-    public Boolean getType() {
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public Integer getType() {
         return type;
     }
 
-    public void setType(Boolean type) {
+    public void setType(Integer type) {
         this.type = type;
     }
 
@@ -59,11 +69,11 @@ public class TMessage {
         this.title = title;
     }
 
-    public Boolean getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
@@ -100,6 +110,7 @@ public class TMessage {
         sb.append(", id=").append(id);
         sb.append(", toId=").append(toId);
         sb.append(", formId=").append(formId);
+        sb.append(", code=").append(code);
         sb.append(", type=").append(type);
         sb.append(", title=").append(title);
         sb.append(", status=").append(status);

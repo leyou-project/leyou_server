@@ -6,20 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="im_service" />
-        <module name="user-service" />
-        <module name="im_api" />
+        <module name="goods_api" />
+        <module name="rocket" />
         <module name="gateway" />
         <module name="goods_service" />
-        <module name="goods_api" />
-        <module name="nacos-service" />
+        <module name="im-api" />
+        <module name="logs-service" />
+        <module name="user-service" />
         <module name="hello_api" />
         <module name="nacos-web" />
+        <module name="im-service" />
         <module name="nacos-api" />
         <module name="hello_web" />
         <module name="hello_service" />
+        <module name="nacos-service" />
         <module name="user-api" />
         <module name="common" />
+        <module name="logs-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,13 +54,16 @@
       <module name="hello_service" options="-parameters" />
       <module name="hello_web" options="-parameters" />
       <module name="im" options="-parameters" />
-      <module name="im_api" options="-parameters" />
-      <module name="im_service" options="-parameters" />
+      <module name="im-api" options="-parameters" />
+      <module name="im-service" options="-parameters" />
+      <module name="logs-api" options="-parameters" />
+      <module name="logs-service" options="-parameters" />
       <module name="mybatis_demo" options="-parameters" />
       <module name="nacos" options="-parameters" />
       <module name="nacos-api" options="-parameters" />
       <module name="nacos-service" options="-parameters" />
       <module name="nacos-web" options="-parameters" />
+      <module name="rocket" options="-parameters" />
       <module name="user-api" options="-parameters" />
       <module name="user-service" options="-parameters" />
       <module name="user_api" options="-parameters" />

@@ -24,6 +24,7 @@
         <module>gateway</module>
         <module>im</module>
         <module>nacos</module>
+        <module>logs</module>
     </modules>
 
     <properties>

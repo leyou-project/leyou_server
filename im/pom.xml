@@ -13,8 +13,8 @@
     <artifactId>im</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>im_api</module>
-        <module>im_service</module>
+        <module>im-api</module>
+        <module>im-service</module>
     </modules>
 
     <dependencies>

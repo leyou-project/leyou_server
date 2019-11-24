@@ -109,12 +109,13 @@ CREATE TABLE `t_group_user`  (
 DROP TABLE IF EXISTS `t_message`;
 CREATE TABLE `t_message`  (
   `id` bigint(20) NOT NULL,
-  `to_id` bigint(20) NULL DEFAULT NULL COMMENT '接收者，单发为用户uid，群发为group_id',
+  `to_id` int(20) NULL DEFAULT NULL COMMENT '接收者，单发为用户uid，群发为group_id',
   `form_id` int(11) NULL DEFAULT NULL COMMENT '发送者，1为系统公告',
-  `type` tinyint(1) NULL DEFAULT NULL COMMENT '类型，1单发，2组发，3广播',
+  `code` int(11) NULL DEFAULT NULL COMMENT '消息类型',
+  `type` int(11) NULL DEFAULT NULL COMMENT '类型，1单发，2组发，3广播',
   `title` varchar(55) CHARACTER SET utf8 COLLATE utf8_bin NULL DEFAULT NULL COMMENT '标题',
   `content` blob NULL COMMENT '消息内容，最大65K',
-  `status` tinyint(1) NULL DEFAULT NULL COMMENT '状态，1未读，2已读，3删除',
+  `status` int(11) NULL DEFAULT NULL COMMENT '状态，1未读，2已读，3删除',
   `update_time` bigint(20) NULL DEFAULT NULL,
   `create_time` bigint(20) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
@@ -150,3 +151,15 @@ CREATE TABLE `t_cart`  (
   `create_time` bigint(20) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_bin COMMENT = '购物车表' ROW_FORMAT = Dynamic;
+
+DROP TABLE IF EXISTS `t_log`;
+CREATE TABLE `t_log`  (
+  `id` bigint(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL DEFAULT 0,
+  `level` int(1) NULL DEFAULT NULL COMMENT '日志等级',
+  `type` int(11) NULL DEFAULT NULL COMMENT '操作类型',
+  `info` varchar(155) NULL DEFAULT NULL COMMENT '信息',
+  `remake` varchar(255) NULL DEFAULT NULL COMMENT '备注',
+  `create_time` bigint(20) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_bin COMMENT = '日志表' ROW_FORMAT = Dynamic;
