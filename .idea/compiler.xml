@@ -6,20 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-service" />
+        <module name="goods_api" />
         <module name="rocket" />
         <module name="gateway" />
         <module name="goods_service" />
         <module name="im-api" />
         <module name="logs-service" />
-        <module name="nacos-service" />
+        <module name="user-service" />
         <module name="hello_api" />
         <module name="nacos-web" />
         <module name="im-service" />
         <module name="nacos-api" />
+        <module name="data" />
         <module name="hello_web" />
         <module name="hello_service" />
-        <module name="goods_api" />
+        <module name="nacos-service" />
         <module name="user-api" />
         <module name="common" />
         <module name="logs-api" />
@@ -47,6 +48,7 @@
       <module name="cart_api" options="-parameters" />
       <module name="cart_service" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="data" options="-parameters" />
       <module name="dubbo-admin-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="goods" options="" />

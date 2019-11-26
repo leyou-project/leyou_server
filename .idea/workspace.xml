@@ -1,114 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="user服务修改">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/bean/define/RedisOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/bean/define/ResultTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/bean/define/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/config/RocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/aspect/annotation/LogInterceptJoinPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/config/bean/AsyncTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/LogsHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/config/bean/AsyncTask.java" afterDir="false" />
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/DataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/ClusterDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/MasterDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/controller/TempController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/domain/Temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/mapper/cluster/TempSlaveMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/mapper/master/TempMasterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/service/TempServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/bean/PageList.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/bean/PageList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TAuthExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TAuthExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TCartExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TCartExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsBind.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsBind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsBindExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsBindExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsStyleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsStyleExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGoodsTypeExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGoodsTypeExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGroupExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGroupExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGroupUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGroupUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TGroupUserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TGroupUserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TLogExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TLogExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessageExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TMessageExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TRoleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TRoleExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TUserDetailsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TUserDetailsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TUserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/domain/TUserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/utils/JWTUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/LogTypeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/utils/LogTypeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/utils/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/utils/ResultUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/Snowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/utils/Snowflake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/rocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/rocket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/RocketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/RocketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/aspect/RequestAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/aspect/RequestAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/GoodsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/ImHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/ImHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/UserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/BlackListInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/BlackListInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/LimitInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/interceptor/LimitInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/utils/AuthUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/test/java/JWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/test/java/JWT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_api/src/main/java/com/leyou/goods/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/src/main/java/com/leyou/goods/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_api/target/classes/com/leyou/goods/service/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods_service/src/main/java/com/leyou/goods/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-api/src/main/java/com/leyou/im/service/RPCImService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-api/src/main/java/com/leyou/im/service/RPCImService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/config/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/AsyncTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/AsyncTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MsgReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MsgReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/RedisTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/RedisTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/define/RedisOperation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/define/SubscribeOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/common/bean/define/SubscribeOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/dubbo/RPCImServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/dubbo/RPCImServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/impl/ImServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/impl/ImServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/utils/MessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/utils/MessageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-api/src/main/java/com/leyou/logs/service/RPCLogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-api/src/main/java/com/leyou/logs/service/RPCLogsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/config/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/LogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/LogsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/dubbo/RPCLogsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/dubbo/RPCLogsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/impl/LogsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/impl/LogsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-api/src/main/java/com/leyou/user/service/RPCUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-api/src/main/java/com/leyou/user/service/RPCUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/config/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TAuthMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TAuthSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TAuthSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TCartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TCartSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TCartSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsBindMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsBindMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsBindSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsBindSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsStyleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsStyleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsStyleSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsStyleSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsTypeSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGoodsTypeSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupUserSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TGroupUserSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TRoleSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TRoleSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserDetailsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserDetailsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserDetailsSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserDetailsSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TUserSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/servicer/dubbo/RPCUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/servicer/dubbo/RPCUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/servicer/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/servicer/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -210,7 +117,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.DataApplication">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hello_web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hello.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.data.DataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="gateway" />
       <extension name="coverage">
@@ -239,6 +166,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DataApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ImApplication" />
       </list>
@@ -253,6 +181,11 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a180a879" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a180a879" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d210e37d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -359,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574524063347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="部分更新">
+      <created>1574780050479</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574780050479</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +325,7 @@
     <MESSAGE value="im和购物车" />
     <MESSAGE value="使用nacos" />
     <MESSAGE value="user服务修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="user服务修改" />
+    <MESSAGE value="部分更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="部分更新" />
   </component>
 </project>
