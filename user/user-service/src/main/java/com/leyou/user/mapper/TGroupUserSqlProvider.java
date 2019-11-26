@@ -1,10 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGroupUser;
-import com.leyou.domain.TGroupUserExample;
-import com.leyou.domain.TGroupUserExample.Criteria;
-import com.leyou.domain.TGroupUserExample.Criterion;
-import com.leyou.domain.TGroupUserExample;
+import com.leyou.common.domain.TGroupUser;
+import com.leyou.common.domain.TGroupUserExample;
+import com.leyou.common.domain.TGroupUserExample.Criteria;
+import com.leyou.common.domain.TGroupUserExample.Criterion;
 
 import java.util.List;
 import java.util.Map;

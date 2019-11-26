@@ -1,9 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TRole;
-import com.leyou.domain.TRoleExample;
-import com.leyou.domain.TRoleExample.Criteria;
-import com.leyou.domain.TRoleExample.Criterion;
+import com.leyou.common.domain.TRole;
+import com.leyou.common.domain.TRoleExample;
+import com.leyou.common.domain.TRoleExample.Criteria;
+import com.leyou.common.domain.TRoleExample.Criterion;
 
 import java.util.List;
 import java.util.Map;

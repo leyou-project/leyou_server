@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGroupUser;
-import com.leyou.domain.TGroupUserExample;
+import com.leyou.common.domain.TGroupUser;
+import com.leyou.common.domain.TGroupUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.DeleteProvider;

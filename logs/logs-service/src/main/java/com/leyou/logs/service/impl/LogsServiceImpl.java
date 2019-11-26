@@ -5,11 +5,11 @@
  */
 package com.leyou.logs.service.impl;
 
-import com.leyou.domain.TLog;
-import com.leyou.domain.TLogExample;
+import com.leyou.common.domain.TLog;
+import com.leyou.common.domain.TLogExample;
 import com.leyou.logs.mapper.TLogMapper;
 import com.leyou.logs.service.LogsService;
-import com.leyou.utils.Snowflake;
+import com.leyou.common.utils.Snowflake;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

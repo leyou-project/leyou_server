@@ -5,20 +5,23 @@
  */
 package com.leyou.gateway.handler;
 
-import com.leyou.domain.TUser;
+import com.leyou.common.domain.TUser;
+import com.leyou.common.domain.TUserDetails;
+import com.leyou.gateway.aspect.annotation.LogInterceptJoinPoint;
 import com.leyou.user.service.RPCUserService;
-import com.leyou.utils.JWTUtil;
-import com.leyou.utils.ResultUtil;
+import com.leyou.common.utils.JWTUtil;
+import com.leyou.common.utils.ResultUtil;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("api/user")
 public class UserHandler
 {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0", check = false)
     private RPCUserService userService;
 
+    @LogInterceptJoinPoint
     @PostMapping("login")
     public Object login(String userName, String password)
     {
@@ -42,5 +45,19 @@ public class UserHandler
     public Object get(@PathVariable Long id)
     {
         return ResultUtil.success(userService.get(id));
+    }
+
+    @LogInterceptJoinPoint
+    @PostMapping("register")
+    public Object register(TUser user)
+    {
+        TUserDetails details = new TUserDetails();
+        if (userService.register(user, details) != null)
+        {
+            return ResultUtil.success("注册成功");
+        } else
+        {
+            return ResultUtil.error("注册失败");
+        }
     }
 }

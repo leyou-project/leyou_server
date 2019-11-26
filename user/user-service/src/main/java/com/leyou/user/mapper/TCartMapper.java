@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TCart;
-import com.leyou.domain.TCartExample;
+import com.leyou.common.domain.TCart;
+import com.leyou.common.domain.TCartExample;
 
 import java.util.List;
 

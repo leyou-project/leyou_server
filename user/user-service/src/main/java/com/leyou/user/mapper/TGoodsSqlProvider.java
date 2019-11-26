@@ -1,9 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGoods;
-import com.leyou.domain.TGoodsExample.Criteria;
-import com.leyou.domain.TGoodsExample.Criterion;
-import com.leyou.domain.TGoodsExample;
+import com.leyou.common.domain.TGoods;
+import com.leyou.common.domain.TGoodsExample.Criteria;
+import com.leyou.common.domain.TGoodsExample.Criterion;
+import com.leyou.common.domain.TGoodsExample;
 
 import java.util.List;
 import java.util.Map;

@@ -5,14 +5,14 @@
  */
 package com.leyou.user.servicer.impl;
 
-import com.leyou.domain.TUser;
-import com.leyou.domain.TUserDetails;
-import com.leyou.domain.TUserExample;
+import com.leyou.common.domain.TUser;
+import com.leyou.common.domain.TUserDetails;
+import com.leyou.common.domain.TUserExample;
 import com.leyou.user.mapper.TUserDetailsMapper;
 import com.leyou.user.mapper.TUserMapper;
 import com.leyou.user.servicer.UserService;
-import com.leyou.utils.MD5Util;
-import com.leyou.utils.Snowflake;
+import com.leyou.common.utils.MD5Util;
+import com.leyou.common.utils.Snowflake;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -5,7 +5,7 @@
  */
 package com.leyou.im.handler.message;
 
-import com.leyou.domain.TMessage;
+import com.leyou.common.domain.TMessage;
 import com.leyou.im.mapper.TMessageMapper;
 import com.leyou.im.utils.CmdCode;
 import com.leyou.im.utils.MessageUtil;

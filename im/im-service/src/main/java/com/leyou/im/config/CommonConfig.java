@@ -5,7 +5,7 @@
  */
 package com.leyou.im.config;
 
-import com.leyou.utils.Snowflake;
+import com.leyou.common.utils.Snowflake;
 import org.apache.dubbo.config.MetadataReportConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

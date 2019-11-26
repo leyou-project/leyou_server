@@ -5,8 +5,8 @@
  */
 package com.leyou.im.service;
 
-import com.leyou.bean.PageList;
-import com.leyou.domain.TMessage;
+import com.leyou.common.bean.PageList;
+import com.leyou.common.domain.TMessage;
 
 public interface RPCImService
 {

@@ -5,8 +5,8 @@
  */
 package com.leyou.user.service;
 
-import com.leyou.domain.TUser;
-import com.leyou.domain.TUserDetails;
+import com.leyou.common.domain.TUser;
+import com.leyou.common.domain.TUserDetails;
 
 public interface RPCUserService
 {

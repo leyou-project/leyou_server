@@ -1,9 +1,9 @@
 package com.leyou.logs.mapper;
 
-import com.leyou.domain.TLog;
-import com.leyou.domain.TLogExample.Criteria;
-import com.leyou.domain.TLogExample.Criterion;
-import com.leyou.domain.TLogExample;
+import com.leyou.common.domain.TLog;
+import com.leyou.common.domain.TLogExample.Criteria;
+import com.leyou.common.domain.TLogExample.Criterion;
+import com.leyou.common.domain.TLogExample;
 
 import java.util.List;
 import java.util.Map;

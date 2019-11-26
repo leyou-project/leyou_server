@@ -1,10 +1,10 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TRole;
+import com.leyou.common.domain.TRole;
 
 import java.util.List;
 
-import com.leyou.domain.TRoleExample;
+import com.leyou.common.domain.TRoleExample;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 

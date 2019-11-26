@@ -1,9 +1,9 @@
 package com.leyou.im.mapper;
 
-import com.leyou.domain.TMessage;
-import com.leyou.domain.TMessageExample;
-import com.leyou.domain.TMessageExample.Criteria;
-import com.leyou.domain.TMessageExample.Criterion;
+import com.leyou.common.domain.TMessage;
+import com.leyou.common.domain.TMessageExample;
+import com.leyou.common.domain.TMessageExample.Criteria;
+import com.leyou.common.domain.TMessageExample.Criterion;
 import org.apache.ibatis.jdbc.SQL;
 
 import java.util.List;

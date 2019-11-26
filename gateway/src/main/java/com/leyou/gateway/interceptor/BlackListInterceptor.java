@@ -6,7 +6,7 @@
 package com.leyou.gateway.interceptor;
 
 import com.leyou.gateway.logic.AddersLogic;
-import com.leyou.utils.ResultUtil;
+import com.leyou.common.utils.ResultUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;

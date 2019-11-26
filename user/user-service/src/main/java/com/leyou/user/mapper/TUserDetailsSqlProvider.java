@@ -1,9 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TUserDetails;
-import com.leyou.domain.TUserDetailsExample.Criteria;
-import com.leyou.domain.TUserDetailsExample.Criterion;
-import com.leyou.domain.TUserDetailsExample;
+import com.leyou.common.domain.TUserDetails;
+import com.leyou.common.domain.TUserDetailsExample.Criteria;
+import com.leyou.common.domain.TUserDetailsExample.Criterion;
+import com.leyou.common.domain.TUserDetailsExample;
 
 import java.util.List;
 import java.util.Map;

@@ -1,9 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TAuth;
-import com.leyou.domain.TAuthExample.Criteria;
-import com.leyou.domain.TAuthExample.Criterion;
-import com.leyou.domain.TAuthExample;
+import com.leyou.common.domain.TAuth;
+import com.leyou.common.domain.TAuthExample.Criteria;
+import com.leyou.common.domain.TAuthExample.Criterion;
+import com.leyou.common.domain.TAuthExample;
 import java.util.List;
 import java.util.Map;
 import org.apache.ibatis.jdbc.SQL;

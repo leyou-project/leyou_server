@@ -5,7 +5,7 @@
  */
 package com.leyou.im.redis;
 
-import com.leyou.im.redis.define.RedisOperation;
+import com.leyou.common.bean.define.RedisOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

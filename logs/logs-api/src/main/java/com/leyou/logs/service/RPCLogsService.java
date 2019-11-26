@@ -5,7 +5,7 @@
  */
 package com.leyou.logs.service;
 
-import com.leyou.domain.TLog;
+import com.leyou.common.domain.TLog;
 
 import java.util.List;
 import java.util.Map;

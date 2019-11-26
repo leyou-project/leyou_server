@@ -1,7 +1,7 @@
 package com.leyou.logs.mapper;
 
-import com.leyou.domain.TLog;
-import com.leyou.domain.TLogExample;
+import com.leyou.common.domain.TLog;
+import com.leyou.common.domain.TLogExample;
 
 import java.util.List;
 

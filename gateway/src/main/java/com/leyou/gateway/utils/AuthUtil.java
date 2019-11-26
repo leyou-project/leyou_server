@@ -5,7 +5,7 @@
  */
 package com.leyou.gateway.utils;
 
-import com.leyou.utils.JWTUtil;
+import com.leyou.common.utils.JWTUtil;
 
 public class AuthUtil
 {
