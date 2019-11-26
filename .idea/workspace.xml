@@ -1,204 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/bean/PageList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TLogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/utils/LogTypeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/java/com/leyou/rocket/RocketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo_hello/rocket/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/handler/ImHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im-api/src/main/java/com/leyou/im/service/RPCImService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/ImService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/dubbo/RPCImServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/utils/MessageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-api/src/main/java/com/leyou/logs/service/RPCLogsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/LogsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/config/CommonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/mapper/TLogSqlProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/LogsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/impl/LogsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/config/RedisClusterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-service/src/main/resources/start.sh" afterDir="false" />
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="加入im服务已经部分更新">
+      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/dubbo/RPCLogsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessageExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/leyou/domain/TMessageExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo_hello/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/leyou/gateway/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/goods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/goods.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im.iml" beforeDir="false" afterPath="$PROJECT_DIR$/im/im.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_api/src/main/java/com/leyou/im/service/ImService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/ImApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/ImApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/ExecutorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/config/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/RedisClusterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/config/RedisClusterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/SnowflakeConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/dao/ImDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/AsyncTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/AsyncTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/define/RedisOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisSubscribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/RedisSubscribe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/RedisTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/RedisTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/SocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/SubscribeOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/redis/define/SubscribeOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/message/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/handler/message/MsgReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/handler/message/MsgReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/service/impl/ImServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/service/impl/ImServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/CmdCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/utils/CmdCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/DESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/utils/DESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/java/com/leyou/im/utils/MessageUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/css/sitelogo.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/css/sitelogo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/json/getList.json" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/json/getList.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/json/getMembers.json" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/json/getMembers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/layui.mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/code.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/chatlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/find.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/html/find.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/getmsg.json" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/html/getmsg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/html/msgbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/html/msgbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/layim.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/layim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/mobile/layim.css" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/mobile/layim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/skin/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/skin/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/css/modules/layim/voice/default.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/font/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/font/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/font/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/10.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/11.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/12.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/13.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/14.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/15.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/16.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/17.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/18.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/19.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/20.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/21.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/22.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/23.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/24.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/25.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/26.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/27.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/28.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/29.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/30.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/31.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/32.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/33.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/34.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/35.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/36.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/37.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/38.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/39.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/4.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/40.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/41.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/42.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/43.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/44.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/45.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/46.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/47.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/48.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/49.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/5.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/50.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/51.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/52.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/53.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/54.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/55.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/56.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/57.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/58.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/59.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/6.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/60.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/61.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/62.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/63.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/64.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/65.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/66.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/67.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/68.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/69.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/7.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/70.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/71.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/8.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/images/face/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/images/face/9.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/laydate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/layim.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/layim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/laypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/lay/modules/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/layui.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/im_service/src/main/resources/static/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/resources/static/web.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/java/com/leyou/user/mapper/TMessageSqlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper/TMessageSqlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/test/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/test/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据库设计/leyou.sql" beforeDir="false" afterPath="$PROJECT_DIR$/数据库设计/leyou.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +45,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="E:\maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="D:\apache-maven-3.6.2\Repository" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -254,7 +65,7 @@
     <property name="android.sdk.path" value="E:/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/im/im-service/src/main/java/com/leyou/im/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/logs/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -297,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.LogsApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mybatis.generator.plugins.Generator" />
       <module name="user-service" />
@@ -414,12 +225,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4ff4bc79" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4a55e6c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4ff4bc79" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@91a2e2fd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4a55e6c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@812004ae" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -476,6 +287,8 @@
       <workItem from="1574564924177" duration="913000" />
       <workItem from="1574599872563" duration="5055000" />
       <workItem from="1574606513028" duration="4198000" />
+      <workItem from="1574759976914" duration="2126000" />
+      <workItem from="1574765288768" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="完善网关">
       <created>1572703516339</created>

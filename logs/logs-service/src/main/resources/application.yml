@@ -31,12 +31,12 @@ dubbo:
     address: nacos://${nacos.service-address}:${nacos.port}
   protocol:
     name: dubbo
-    port: 20020
+    port: 20030
   scan:
     base-packages: com.leyou.logs.service.dubbo
 
 # 雪花算法配置
 snowflake:
-  machine-id: 2
+  machine-id: 3
   app-id: 0
 

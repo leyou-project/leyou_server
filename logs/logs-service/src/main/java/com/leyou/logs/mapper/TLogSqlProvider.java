@@ -12,7 +12,6 @@ import org.apache.ibatis.jdbc.SQL;
 
 public class TLogSqlProvider
 {
-
     public String countByExample(TLogExample example)
     {
         SQL sql = new SQL();
