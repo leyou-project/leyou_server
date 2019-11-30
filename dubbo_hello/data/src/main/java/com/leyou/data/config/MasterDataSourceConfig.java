@@ -6,6 +6,7 @@
 package com.leyou.data.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -20,27 +21,18 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
+@Slf4j
 public class MasterDataSourceConfig
 {
     // 精确到 master 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.leyou.data.mapper.master";
 
-    @Value("${master.datasource.url}")
-    private String url;
-
-    @Value("${master.datasource.username}")
-    private String user;
-
-    @Value("${master.datasource.password}")
-    private String password;
-
-    @Value("${master.datasource.driverClassName}")
-    private String driverClass;
-
-
     @Bean(name = "masterDataSource")
     @Primary
-    public DataSource masterDataSource()
+    public DataSource masterDataSource(@Value("${cluster.datasource.url}") String url,
+                                       @Value("${cluster.datasource.username}") String user,
+                                       @Value("${cluster.datasource.password}") String password,
+                                       @Value("${cluster.datasource.driverClassName}") String driverClass)
     {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClass);

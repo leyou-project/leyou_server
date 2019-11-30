@@ -6,38 +6,34 @@
 package com.leyou.data.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.annotation.MapperScan;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 
 @Configuration
+@Slf4j
 public class ClusterDataSourceConfig
 {
     // 精确到 cluster 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.leyou.data.mapper.cluster";
 
-    @Value("${cluster.datasource.url}")
-    private String url;
-    @Value("${cluster.datasource.username}")
-    private String user;
-    @Value("${cluster.datasource.password}")
-    private String password;
-    @Value("${cluster.datasource.driverClassName}")
-    private String driverClass;
-
     @Bean(name = "clusterDataSource")
-    public DataSource clusterDataSource()
+    public DataSource clusterDataSource(@Value("${cluster.datasource.url}") String url,
+                                        @Value("${cluster.datasource.username}") String user,
+                                        @Value("${cluster.datasource.password}") String password,
+                                        @Value("${cluster.datasource.driverClassName}") String driverClass)
     {
+        System.out.println("driverClass=" + driverClass);
+        System.out.println("url=" + url);
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClass);
         dataSource.setUrl(url);
@@ -47,7 +43,7 @@ public class ClusterDataSourceConfig
     }
 
     @Bean(name = "clusterTransactionManager")
-    public DataSourceTransactionManager clusterTransactionManager(@Autowired@Qualifier("clusterDataSource") DataSource clusterDataSource)
+    public DataSourceTransactionManager clusterTransactionManager(@Autowired @Qualifier("clusterDataSource") DataSource clusterDataSource)
     {
         return new DataSourceTransactionManager(clusterDataSource);
     }

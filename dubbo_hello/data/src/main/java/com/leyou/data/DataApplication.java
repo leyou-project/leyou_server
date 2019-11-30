@@ -11,7 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DataApplication
 {
-    // https://blog.csdn.net/qq_41076797/article/details/82889770
     public static void main(String[] args)
     {
         SpringApplication.run(DataApplication.class);
