@@ -26,14 +26,12 @@ public class ClusterDataSourceConfig
     // 精确到 cluster 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.leyou.data.mapper.cluster";
 
-    @Bean(name = "clusterDataSource")
-    public DataSource clusterDataSource(@Value("${cluster.datasource.url}") String url,
-                                        @Value("${cluster.datasource.username}") String user,
-                                        @Value("${cluster.datasource.password}") String password,
-                                        @Value("${cluster.datasource.driverClassName}") String driverClass)
+    @Bean(name = "clusterDataSource1")
+    public DataSource clusterDataSource1(@Value("${cluster1.datasource.url}") String url,
+                                        @Value("${cluster1.datasource.username}") String user,
+                                        @Value("${cluster1.datasource.password}") String password,
+                                        @Value("${cluster1.datasource.driverClassName}") String driverClass)
     {
-        System.out.println("driverClass=" + driverClass);
-        System.out.println("url=" + url);
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClass);
         dataSource.setUrl(url);
@@ -42,15 +40,43 @@ public class ClusterDataSourceConfig
         return dataSource;
     }
 
-    @Bean(name = "clusterTransactionManager")
-    public DataSourceTransactionManager clusterTransactionManager(@Autowired @Qualifier("clusterDataSource") DataSource clusterDataSource)
+    @Bean(name = "clusterDataSource2")
+    public DataSource clusterDataSource2(@Value("${cluster2.datasource.url}") String url,
+                                        @Value("${cluster2.datasource.username}") String user,
+                                        @Value("${cluster2.datasource.password}") String password,
+                                        @Value("${cluster2.datasource.driverClassName}") String driverClass)
+    {
+        DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setDriverClassName(driverClass);
+        dataSource.setUrl(url);
+        dataSource.setUsername(user);
+        dataSource.setPassword(password);
+        return dataSource;
+    }
+
+    @Bean(name = "clusterTransactionManager1")
+    public DataSourceTransactionManager clusterTransactionManager1(@Autowired @Qualifier("clusterDataSource1") DataSource clusterDataSource)
     {
         return new DataSourceTransactionManager(clusterDataSource);
     }
 
+    @Bean(name = "clusterTransactionManager2")
+    public DataSourceTransactionManager clusterTransactionManager2(@Autowired @Qualifier("clusterDataSource2") DataSource clusterDataSource)
+    {
+        return new DataSourceTransactionManager(clusterDataSource);
+    }
 
-    @Bean(name = "clusterSqlSessionFactory")
-    public SqlSessionFactory clusterSqlSessionFactory(@Autowired @Qualifier("clusterDataSource") DataSource clusterDataSource) throws Exception
+    @Bean(name = "clusterSqlSessionFactory1")
+    public SqlSessionFactory clusterSqlSessionFactory1(@Autowired @Qualifier("clusterDataSource1") DataSource clusterDataSource) throws Exception
+    {
+        final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
+        sessionFactory.setDataSource(clusterDataSource);
+        //sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(ClusterDataSourceConfig.MAPPER_LOCATION));
+        return sessionFactory.getObject();
+    }
+
+    @Bean(name = "clusterSqlSessionFactory2")
+    public SqlSessionFactory clusterSqlSessionFactory2(@Autowired @Qualifier("clusterDataSource2") DataSource clusterDataSource) throws Exception
     {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(clusterDataSource);
@@ -59,12 +85,22 @@ public class ClusterDataSourceConfig
     }
 
     // 扫描mapper接口
-    @Bean("clusterMapperScanner")
-    public MapperScannerConfigurer getScanner()
+    @Bean("clusterMapperScanner1")
+    public MapperScannerConfigurer getScanner1()
     {
         MapperScannerConfigurer scanner = new MapperScannerConfigurer();
         scanner.setBasePackage(PACKAGE);
-        scanner.setSqlSessionFactoryBeanName("clusterSqlSessionFactory");
+        scanner.setSqlSessionFactoryBeanName("clusterSqlSessionFactory1");
+        return scanner;
+    }
+
+    // 扫描mapper接口
+    @Bean("clusterMapperScanner2")
+    public MapperScannerConfigurer getScanner2()
+    {
+        MapperScannerConfigurer scanner = new MapperScannerConfigurer();
+        scanner.setBasePackage(PACKAGE);
+        scanner.setSqlSessionFactoryBeanName("clusterSqlSessionFactory2");
         return scanner;
     }
 }

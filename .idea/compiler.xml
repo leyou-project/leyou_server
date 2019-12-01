@@ -13,14 +13,11 @@
         <module name="im-api" />
         <module name="logs-service" />
         <module name="user-service" />
-        <module name="hello_api" />
-        <module name="nacos-web" />
-        <module name="im-service" />
-        <module name="nacos-api" />
-        <module name="data" />
         <module name="hello_web" />
+        <module name="data" />
+        <module name="hello_api" />
+        <module name="im-service" />
         <module name="hello_service" />
-        <module name="nacos-service" />
         <module name="user-api" />
         <module name="common" />
         <module name="logs-api" />
@@ -37,6 +34,10 @@
       <module name="im_api" target="1.8" />
       <module name="im_service" target="1.8" />
       <module name="mybatis_demo" target="1.8" />
+      <module name="nacos" target="1.8" />
+      <module name="nacos-api" target="1.8" />
+      <module name="nacos-service" target="1.8" />
+      <module name="nacos-web" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="user_api" target="1.8" />
       <module name="user_service" target="1.8" />

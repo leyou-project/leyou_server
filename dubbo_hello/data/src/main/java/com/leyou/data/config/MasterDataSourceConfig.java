@@ -6,7 +6,9 @@
 package com.leyou.data.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -19,6 +21,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
+import java.util.Properties;
 
 @Configuration
 @Slf4j
@@ -26,6 +29,20 @@ public class MasterDataSourceConfig
 {
     // 精确到 master 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.leyou.data.mapper.master";
+
+    @Bean
+    public PageHelper pageHelper()
+    {
+        PageHelper pageHelper = new PageHelper();
+        Properties p = new Properties();
+        p.setProperty("offsetAsPageNum", "true");
+        p.setProperty("rowBoundsWithCount", "true");
+        p.setProperty("reasonable", "true");
+        p.setProperty("returnPageInfo", "check");
+        p.setProperty("params", "count=countSql");
+        pageHelper.setProperties(p);
+        return pageHelper;
+    }
 
     @Bean(name = "masterDataSource")
     @Primary

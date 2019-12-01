@@ -23,7 +23,6 @@
         <module>goods</module>
         <module>gateway</module>
         <module>im</module>
-        <module>nacos</module>
         <module>logs</module>
     </modules>
 
@@ -47,6 +46,7 @@
         <fastjson.version>1.2.62</fastjson.version>
         <nacos-spring.version>0.3.3</nacos-spring.version>
         <jwt.version>0.6.0</jwt.version>
+        <pagehelper.version>5.1.2</pagehelper.version>
     </properties>
 
     <dependencies>
@@ -106,6 +106,12 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>${jwt.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
         </dependency>
 
         <dependency>
