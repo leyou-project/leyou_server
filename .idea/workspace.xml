@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="日志dubbo服务">
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="多数据源">
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/DataSourceContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/DataSourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/ReadDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/RoutingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/WriteDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/ClusterDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/ClusterDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/MasterDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/java/com/leyou/data/config/MasterDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo_hello/data/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo_hello/data/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-api/src/main/java/com/leyou/service/NacosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/src/main/java/com/leyou/nacos/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/src/main/java/com/leyou/nacos/config/MetaConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/src/main/java/com/leyou/nacos/service/NacosServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-service/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-web/src/main/java/com/leyou/nacos/WebApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-web/src/main/java/com/leyou/nacos/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-web/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/nacos-web/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +52,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -38,8 +65,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\apache-maven-3.6.2\Repository" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+        <option name="localRepository" value="E:\jar-libs" />
+        <option name="userSettingsFile" value="E:\maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -64,7 +91,7 @@
     <property name="android.sdk.path" value="E:/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/logs/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo_hello/data/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -72,13 +99,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\dubbo_hello\data\src\main\resources" />
+      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\common\src\main\java\com\leyou\bean\define" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im-service\src\main\java\com\leyou\im\mapper" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\common\src\main\java\com\leyou\domain" />
       <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im-service\src\main\resources" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\im\im_service\src\main\java\com\leyou\im\mapper" />
-      <recent name="C:\Users\Administrator\IdeaProjects\leyou_server\user\user-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leyou.gateway.config.bean" />
       <recent name="com.leyou.im.config" />
       <recent name="com.leyou.user.config" />
       <recent name="com.leyou.logs.config" />
@@ -97,20 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LogsApplication">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.mybatis.generator.plugins.Generator" />
-      <module name="user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.mybatis.generator.plugins.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DataApplication">
     <configuration name="RocketApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leyou.rocket.RocketApplication" />
       <module name="rocket" />
@@ -131,8 +146,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="DataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.data.DataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,8 +186,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ImApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="im-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leyou.im.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.im.ImApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,14 +206,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="RocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rocket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.rocket.RocketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leyou.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.user.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,23 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Generator" />
-      <item itemvalue="Application.RocketApplication" />
-      <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.GoodsApplication" />
-      <item itemvalue="Spring Boot.HelloApplication" />
-      <item itemvalue="Spring Boot.ImApplication" />
-      <item itemvalue="Spring Boot.WebApplication" />
-      <item itemvalue="Spring Boot.LogsApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Application.Generator" />
+        <item itemvalue="Spring Boot.DataApplication" />
         <item itemvalue="Application.RocketApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ImApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -210,8 +240,14 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.2124317" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -268,10 +304,14 @@
       <workItem from="1574599872563" duration="5055000" />
       <workItem from="1574606513028" duration="4198000" />
       <workItem from="1574759976914" duration="2126000" />
-      <workItem from="1574765288768" duration="412000" />
-      <workItem from="1575000965626" duration="16000" />
-      <workItem from="1575426210940" duration="68000" />
-      <workItem from="1575426391373" duration="17000" />
+      <workItem from="1574765288768" duration="95000" />
+      <workItem from="1574861645981" duration="295000" />
+      <workItem from="1574861970015" duration="178000" />
+      <workItem from="1574862193778" duration="1497000" />
+      <workItem from="1574864055101" duration="5766000" />
+      <workItem from="1575118644891" duration="257000" />
+      <workItem from="1575119150542" duration="7213000" />
+      <workItem from="1575192370458" duration="4259000" />
     </task>
     <task id="LOCAL-00001" summary="完善网关">
       <created>1572703516339</created>
@@ -315,14 +355,28 @@
       <option name="project" value="LOCAL" />
       <updated>1574524063347</updated>
     </task>
-    <task id="LOCAL-00007" summary="日志dubbo服务">
-      <created>1574765502776</created>
+    <task id="LOCAL-00007" summary="部分更新">
+      <created>1574780050479</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1574765502776</updated>
+      <updated>1574780050479</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="多数据源">
+      <created>1574783655588</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574783655588</updated>
+    </task>
+    <task id="LOCAL-00009" summary="多数据源的读写分离">
+      <created>1575126134750</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575126134750</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,21 +402,75 @@
     <MESSAGE value="im和购物车" />
     <MESSAGE value="使用nacos" />
     <MESSAGE value="user服务修改" />
-    <MESSAGE value="日志dubbo服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志dubbo服务" />
+    <MESSAGE value="部分更新" />
+    <MESSAGE value="多数据源" />
+    <MESSAGE value="多数据源的读写分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="多数据源的读写分离" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="162" key="SettingsEditor" timestamp="1575426406760">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="353" y="1" key="CommitChangelistDialog2" timestamp="1575201909223">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426406760" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1575426391528">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="353" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575201909223" />
+    <state width="1152" height="311" key="GridCell.Tab.0.bottom" timestamp="1575126705173">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426391528" />
-    <state x="646" y="311" key="git4idea.merge.GitPullDialog" timestamp="1575426453122">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1152" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575126705173" />
+    <state width="1152" height="311" key="GridCell.Tab.0.center" timestamp="1575126705173">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="646" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426453122" />
+    <state width="1152" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575126705173" />
+    <state width="1152" height="311" key="GridCell.Tab.0.left" timestamp="1575126705173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575126705173" />
+    <state width="1152" height="311" key="GridCell.Tab.0.right" timestamp="1575126705173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575126705173" />
+    <state width="1152" height="311" key="GridCell.Tab.1.bottom" timestamp="1575126705174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575126705174" />
+    <state width="1152" height="311" key="GridCell.Tab.1.center" timestamp="1575126705174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575126705174" />
+    <state width="1152" height="311" key="GridCell.Tab.1.left" timestamp="1575126705173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575126705173" />
+    <state width="1152" height="311" key="GridCell.Tab.1.right" timestamp="1575126705174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575126705174" />
+    <state width="1152" height="311" key="GridCell.Tab.2.bottom" timestamp="1575125292274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575125292274" />
+    <state width="1152" height="311" key="GridCell.Tab.2.center" timestamp="1575125292274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1575125292274" />
+    <state width="1152" height="311" key="GridCell.Tab.2.left" timestamp="1575125292274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1575125292274" />
+    <state width="1152" height="311" key="GridCell.Tab.2.right" timestamp="1575125292274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1152" height="311" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1575125292274" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1575119181032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575119181032" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575126140826">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575126140826" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575192370885">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575192370885" />
   </component>
 </project>

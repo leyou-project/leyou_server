@@ -1,7 +1,7 @@
 package com.leyou.im.mapper;
 
-import com.leyou.domain.TMessage;
-import com.leyou.domain.TMessageExample;
+import com.leyou.common.domain.TMessage;
+import com.leyou.common.domain.TMessageExample;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 

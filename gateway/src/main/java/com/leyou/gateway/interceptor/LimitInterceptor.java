@@ -6,7 +6,7 @@
 package com.leyou.gateway.interceptor;
 
 import com.google.common.util.concurrent.RateLimiter;
-import com.leyou.utils.ResultUtil;
+import com.leyou.common.utils.ResultUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 

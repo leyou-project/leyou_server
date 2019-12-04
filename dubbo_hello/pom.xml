@@ -17,5 +17,6 @@
         <module>hello_service</module>
         <module>hello_web</module>
         <module>rocket</module>
+        <module>data</module>
     </modules>
 </project>

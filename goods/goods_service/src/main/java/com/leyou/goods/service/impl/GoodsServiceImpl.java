@@ -5,7 +5,7 @@
  */
 package com.leyou.goods.service.impl;
 
-import com.leyou.domain.TGoods;
+import com.leyou.common.domain.TGoods;
 import com.leyou.goods.mapper.GoodsMapper;
 import com.leyou.goods.service.GoodsService;
 import org.apache.dubbo.config.annotation.Service;

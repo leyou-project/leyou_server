@@ -6,7 +6,7 @@
 package com.leyou.im.utils;
 
 import com.google.gson.Gson;
-import com.leyou.domain.TMessage;
+import com.leyou.common.domain.TMessage;
 
 public class MessageUtil
 {

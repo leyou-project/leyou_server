@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGoods;
-import com.leyou.domain.TGoodsExample;
+import com.leyou.common.domain.TGoods;
+import com.leyou.common.domain.TGoodsExample;
 
 import java.util.List;
 

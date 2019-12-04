@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGroup;
-import com.leyou.domain.TGroupExample;
+import com.leyou.common.domain.TGroup;
+import com.leyou.common.domain.TGroupExample;
 
 import java.util.List;
 

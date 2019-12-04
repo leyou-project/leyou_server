@@ -5,11 +5,11 @@
  */
 package com.leyou.im.handler.message;
 
-import com.leyou.domain.TMessage;
+import com.leyou.common.domain.TMessage;
 import com.leyou.im.redis.RedisTemplate;
 import com.leyou.im.utils.CmdCode;
 import com.leyou.im.utils.MessageUtil;
-import com.leyou.utils.Snowflake;
+import com.leyou.common.utils.Snowflake;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

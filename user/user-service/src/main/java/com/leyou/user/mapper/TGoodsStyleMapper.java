@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TGoodsStyle;
-import com.leyou.domain.TGoodsStyleExample;
+import com.leyou.common.domain.TGoodsStyle;
+import com.leyou.common.domain.TGoodsStyleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.DeleteProvider;

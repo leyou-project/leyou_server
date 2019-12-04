@@ -1,7 +1,7 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TAuth;
-import com.leyou.domain.TAuthExample;
+import com.leyou.common.domain.TAuth;
+import com.leyou.common.domain.TAuthExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.DeleteProvider;

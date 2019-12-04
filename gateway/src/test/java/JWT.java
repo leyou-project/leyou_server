@@ -1,4 +1,4 @@
-import com.leyou.utils.JWTUtil;
+import com.leyou.common.utils.JWTUtil;
 
 /**
  * 作者：刘时明

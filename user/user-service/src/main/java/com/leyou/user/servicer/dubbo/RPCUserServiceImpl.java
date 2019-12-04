@@ -5,8 +5,8 @@
  */
 package com.leyou.user.servicer.dubbo;
 
-import com.leyou.domain.TUser;
-import com.leyou.domain.TUserDetails;
+import com.leyou.common.domain.TUser;
+import com.leyou.common.domain.TUserDetails;
 import com.leyou.user.service.RPCUserService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;

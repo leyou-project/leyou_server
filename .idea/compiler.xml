@@ -6,20 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-service" />
+        <module name="goods_api" />
         <module name="rocket" />
         <module name="gateway" />
         <module name="goods_service" />
         <module name="im-api" />
         <module name="logs-service" />
-        <module name="nacos-service" />
-        <module name="hello_api" />
-        <module name="nacos-web" />
-        <module name="im-service" />
-        <module name="nacos-api" />
+        <module name="user-service" />
         <module name="hello_web" />
+        <module name="data" />
+        <module name="hello_api" />
+        <module name="im-service" />
         <module name="hello_service" />
-        <module name="goods_api" />
         <module name="user-api" />
         <module name="common" />
         <module name="logs-api" />
@@ -36,6 +34,10 @@
       <module name="im_api" target="1.8" />
       <module name="im_service" target="1.8" />
       <module name="mybatis_demo" target="1.8" />
+      <module name="nacos" target="1.8" />
+      <module name="nacos-api" target="1.8" />
+      <module name="nacos-service" target="1.8" />
+      <module name="nacos-web" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="user_api" target="1.8" />
       <module name="user_service" target="1.8" />
@@ -47,6 +49,7 @@
       <module name="cart_api" options="-parameters" />
       <module name="cart_service" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="data" options="-parameters" />
       <module name="dubbo-admin-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="goods" options="" />

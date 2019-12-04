@@ -5,7 +5,7 @@
  */
 package com.leyou.logs.service;
 
-import com.leyou.domain.TLog;
+import com.leyou.common.domain.TLog;
 
 public interface LogsService extends RPCLogsService
 {

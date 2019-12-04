@@ -5,11 +5,13 @@
  */
 package com.leyou.im.handler;
 
-import com.leyou.im.redis.define.SubscribeOperation;
+import com.leyou.common.bean.define.RedisOperation;
+import com.leyou.common.bean.define.SubscribeOperation;
 import com.leyou.im.redis.RedisTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
 
 @Service
@@ -21,7 +23,7 @@ public class AsyncTask
     @Async
     public void redisSubscribe(String channel, SubscribeOperation operation)
     {
-        template.writeOperation(o ->
+        template.writeOperation((RedisOperation<Jedis>) o ->
         {
             o.subscribe(new JedisPubSub()
             {

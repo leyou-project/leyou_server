@@ -5,7 +5,7 @@
  */
 package com.leyou.logs.service.dubbo;
 
-import com.leyou.domain.TLog;
+import com.leyou.common.domain.TLog;
 import com.leyou.logs.service.LogsService;
 import com.leyou.logs.service.RPCLogsService;
 import org.apache.dubbo.config.annotation.Service;

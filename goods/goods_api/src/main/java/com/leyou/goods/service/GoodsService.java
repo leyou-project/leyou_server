@@ -5,7 +5,7 @@
  */
 package com.leyou.goods.service;
 
-import com.leyou.domain.TGoods;
+import com.leyou.common.domain.TGoods;
 
 import java.util.List;
 

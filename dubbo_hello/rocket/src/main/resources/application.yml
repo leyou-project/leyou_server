@@ -1,5 +1,5 @@
 rocketmq:
   producer:
     groupName: leyou
-    namesrvAddr: 127.0.0.1
+    namesrvAddr: 47.103.211.234:9876
     default: true

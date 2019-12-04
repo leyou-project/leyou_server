@@ -5,13 +5,13 @@
  */
 package com.leyou.im.service.impl;
 
-import com.leyou.bean.PageList;
-import com.leyou.domain.TMessage;
+import com.leyou.common.bean.PageList;
+import com.leyou.common.domain.TMessage;
 import com.leyou.im.handler.message.MsgReceiver;
 import com.leyou.im.mapper.TMessageMapper;
 import com.leyou.im.service.ImService;
 import com.leyou.im.utils.MessageUtil;
-import com.leyou.utils.Snowflake;
+import com.leyou.common.utils.Snowflake;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -5,8 +5,8 @@
  */
 package com.leyou.im.service.dubbo;
 
-import com.leyou.bean.PageList;
-import com.leyou.domain.TMessage;
+import com.leyou.common.bean.PageList;
+import com.leyou.common.domain.TMessage;
 import com.leyou.im.service.ImService;
 import com.leyou.im.service.RPCImService;
 import org.apache.dubbo.config.annotation.Service;

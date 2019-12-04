@@ -1,10 +1,10 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TUser;
+import com.leyou.common.domain.TUser;
 
 import java.util.List;
 
-import com.leyou.domain.TUserExample;
+import com.leyou.common.domain.TUserExample;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 

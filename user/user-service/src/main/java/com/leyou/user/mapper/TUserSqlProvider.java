@@ -1,9 +1,9 @@
 package com.leyou.user.mapper;
 
-import com.leyou.domain.TUser;
-import com.leyou.domain.TUserExample;
-import com.leyou.domain.TUserExample.Criteria;
-import com.leyou.domain.TUserExample.Criterion;
+import com.leyou.common.domain.TUser;
+import com.leyou.common.domain.TUserExample;
+import com.leyou.common.domain.TUserExample.Criteria;
+import com.leyou.common.domain.TUserExample.Criterion;
 import java.util.List;
 import java.util.Map;
 import org.apache.ibatis.jdbc.SQL;

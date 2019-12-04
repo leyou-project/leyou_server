@@ -1,0 +1,20 @@
+cluster1:
+  datasource:
+    url: jdbc:mysql://47.103.211.234:3307/leyou?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+cluster2:
+  datasource:
+    url: jdbc:mysql://47.103.211.234:3308/leyou?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+master:
+  datasource:
+    url: jdbc:mysql://47.103.211.234:3306/leyou?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver

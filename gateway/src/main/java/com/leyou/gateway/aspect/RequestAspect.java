@@ -5,6 +5,9 @@
  */
 package com.leyou.gateway.aspect;
 
+import com.leyou.common.utils.ResultUtil;
+import com.leyou.gateway.handler.UserHandler;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
@@ -24,6 +27,10 @@ public class RequestAspect
     // 访问人数
     private CopyOnWriteArraySet<String> requestUserSet = new CopyOnWriteArraySet<>();
 
+    /**
+     * 基于方法通配符的普通方法拦截
+     * @throws Throwable
+     */
     @AfterReturning("execution(public * com.leyou.gateway.handler.*.*(..))")
     public void requestHandler() throws Throwable
     {
@@ -36,5 +43,40 @@ public class RequestAspect
         }
         System.out.println("请求路径：" + request.getRequestURI());
         System.out.println("请求人次=" + requestCount.incrementAndGet());
+    }
+
+    /**
+     * 基于注解的连接点拦截
+     * @param joinPoint
+     * @param result
+     * @return
+     * @throws Throwable
+     */
+    @AfterReturning(returning = "result", pointcut = "@annotation(com.leyou.gateway.aspect.annotation.LogInterceptJoinPoint)")
+    public Object AfterExec(JoinPoint joinPoint, Object result) throws Throwable
+    {
+        Class clazz = joinPoint.getSignature().getDeclaringType();
+        String methodName = joinPoint.getSignature().getName();
+        if (clazz == UserHandler.class && "login".equals(methodName))
+        {
+            if (result.equals(ResultUtil.error("登录失败")))
+            {
+                System.out.println("登录失败");
+            } else
+            {
+                System.out.println("登录成功");
+            }
+        } else if (clazz == UserHandler.class && "register".equals(methodName))
+        {
+            if (result.equals(ResultUtil.error("注册失败")))
+            {
+                System.out.println("注册失败");
+            } else
+            {
+                System.out.println("注册成功");
+            }
+        }
+        System.out.println("result=" + result);
+        return result;
     }
 }
