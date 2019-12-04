@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="加入im服务已经部分更新">
-      <change afterPath="$PROJECT_DIR$/logs/logs-service/src/main/java/com/leyou/logs/service/dubbo/RPCLogsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="904c462c-75bf-4c9b-bca5-b9a5675c6e7b" name="Default Changelist" comment="日志dubbo服务">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs-service/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-service/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-service/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-service/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,12 +47,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/sdk" />
@@ -96,16 +95,6 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.LogsApplication">
@@ -218,24 +207,15 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <option name="contentProportion" value="0.2090164" />
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4a55e6c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4a55e6c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@812004ae" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -288,7 +268,10 @@
       <workItem from="1574599872563" duration="5055000" />
       <workItem from="1574606513028" duration="4198000" />
       <workItem from="1574759976914" duration="2126000" />
-      <workItem from="1574765288768" duration="95000" />
+      <workItem from="1574765288768" duration="412000" />
+      <workItem from="1575000965626" duration="16000" />
+      <workItem from="1575426210940" duration="68000" />
+      <workItem from="1575426391373" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="完善网关">
       <created>1572703516339</created>
@@ -332,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574524063347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="日志dubbo服务">
+      <created>1574765502776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574765502776</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +348,21 @@
     <MESSAGE value="im和购物车" />
     <MESSAGE value="使用nacos" />
     <MESSAGE value="user服务修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="user服务修改" />
+    <MESSAGE value="日志dubbo服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志dubbo服务" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1575426406760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426406760" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1575426391528">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426391528" />
+    <state x="646" y="311" key="git4idea.merge.GitPullDialog" timestamp="1575426453122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575426453122" />
   </component>
 </project>
